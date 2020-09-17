@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../hikvisionbd-laravel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../own-hikvisionbd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../techhelpinfo" vcs="Git" />
   </component>
 </project>

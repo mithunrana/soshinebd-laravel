@@ -64,7 +64,9 @@
                         <i class="fa fa-graduation-cap"></i>
                         <p>PORTFOLIO
                             <span class="right badge badge-success">
-                               8
+                               @php
+                                   echo count(App\Portfolio::all());
+                               @endphp
                             </span>
                         </p>
                     </a>
@@ -75,7 +77,9 @@
                         <i class="fa fa-graduation-cap"></i>
                         <p>Solutions
                             <span class="right badge badge-success">
-                               8
+                               @php
+                                   echo count(App\Solutions::all());
+                               @endphp
                             </span>
                         </p>
                     </a>
@@ -86,7 +90,9 @@
                         <i class="fa fa-handshake" style="font-size:18px"></i>
                         <p>Events
                             <span class="right badge badge-success">
-                               8
+                               @php
+                                   echo count(App\Events::all());
+                               @endphp
                             </span>
                         </p>
                     </a>
@@ -97,7 +103,9 @@
                         <i class="fa fa-graduation-cap"></i>
                         <p>Certification
                             <span class="right badge badge-success">
-                               8
+                               @php
+                                   echo count(App\AuthorizationCertificate::all());
+                               @endphp
                             </span>
                         </p>
                     </a>
@@ -108,7 +116,9 @@
                         <i class="fa fa-edit"></i>
                         <p>Training
                             <span class="right badge badge-success">
-                               8
+                              @php
+                                  echo count(App\Training::all());
+                              @endphp
                             </span>
                         </p>
                     </a>
@@ -119,7 +129,9 @@
                         <i class="fa fa-newspaper" style="font-size:18px"></i>
                         <p>News
                             <span class="right badge badge-success">
-                               8
+                               @php
+                                   echo count(App\News::all());
+                               @endphp
                             </span>
                         </p>
                     </a>
@@ -130,7 +142,9 @@
                         <i class="fa fa-cog" ></i>
                         <p>Software
                             <span class="right badge badge-success">
-                               8
+                               @php
+                                   echo count(App\SoftwareList::all());
+                               @endphp
                             </span>
                         </p>
                     </a>
@@ -178,6 +192,11 @@
                             <a href="{{url('admin/products-manage')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Products Manage</p>
+                                <span class="right badge badge-success">
+                               @php
+                                   echo count(App\Products::all());
+                               @endphp
+                            </span>
                             </a>
                         </li>
                         <li class="nav-item">
