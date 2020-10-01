@@ -64,7 +64,7 @@
                             </div>
                             <div class="col-md-5">
                                 <div class="mt-img">
-                                    <img src="{{asset('')}}UI/images/service.jpg" class="img-fluid mb-2" alt="">
+                                    <img src="{{asset('')}}UI/images/service.jpg" class="img-fluid mb-2" alt="service">
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                             </div>
                             <div class="col-md-5">
                                 <div class="mt-img">
-                                    <img src="{{asset('')}}UI/images/mega-trading-quality.jpg" class="img-fluid mb-2" alt="">
+                                    <img src="{{asset('')}}UI/images/mega-trading-quality.jpg" class="img-fluid mb-2" alt="quality">
                                 </div>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                             </div>
                             <div class="col-md-5">
                                 <div class="mt-img">
-                                    <img src="{{asset('')}}UI/images/mega-trade-mission.jpg" class="img-fluid mb-2" alt="">
+                                    <img src="{{asset('')}}UI/images/mega-trade-mission.jpg" class="img-fluid mb-2" alt="mission">
                                 </div>
                             </div>
                         </div>
@@ -110,7 +110,7 @@
                             </div>
                             <div class="col-md-5">
                                 <div class="mt-img">
-                                    <img src="{{asset('')}}UI/images/mega-trade-vission.jpg" class="img-fluid mb-2" alt="">
+                                    <img src="{{asset('')}}UI/images/mega-trade-vission.jpg" class="img-fluid mb-2" alt="vision">
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
         <div class="small-width" style="text-align: center;">
             <p>Soshine Marketing Company possess the world's largest R&amp;D team and state-of-art development facilities;
                 both allow Soshine Marketing Company customers the benefit of world-class software that are designed with
-                cutting-edge technology. As further commitment to its customers, tech help info annually
+                cutting-edge technology. As further commitment to its customers,Soshine Marketing Company annually
                 reinvests 7% of its revenue into R&amp;D for continued product innovation and improvement.</p>
             </p>
             <br>

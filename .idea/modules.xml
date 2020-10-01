@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../own-hikvisionbd/.idea/hikvisionbd-laravel.iml" filepath="$PROJECT_DIR$/../own-hikvisionbd/.idea/hikvisionbd-laravel.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/soshinebd-laravel.iml" filepath="$PROJECT_DIR$/.idea/soshinebd-laravel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../techhelpinfo/.idea/techhelpinfo.iml" filepath="$PROJECT_DIR$/../techhelpinfo/.idea/techhelpinfo.iml" />
     </modules>
   </component>
 </project>
