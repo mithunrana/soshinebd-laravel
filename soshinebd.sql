@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 17, 2020 at 03:36 PM
+-- Generation Time: Nov 19, 2020 at 01:20 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.2.23
 
@@ -21,6 +21,31 @@ SET time_zone = "+00:00";
 --
 -- Database: `soshinebd`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `active_statuses`
+--
+
+CREATE TABLE `active_statuses` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `Name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Value` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `active_statuses`
+--
+
+INSERT INTO `active_statuses` (`id`, `Name`, `Value`, `created_at`, `updated_at`) VALUES
+(1, 'End User Active', 'EndUserActive', NULL, NULL),
+(2, 'Admin', 'TechHelpInfoAdmin', NULL, NULL),
+(3, 'Site Editor', 'TechHelpInfoSiteEditor', NULL, NULL),
+(4, 'End-User Not Active', 'EndUserNotActive', NULL, NULL),
+(5, 'Tech Register', 'TechRegister', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -108,6 +133,43 @@ INSERT INTO `blog_tutorials` (`id`, `BrowserTitle`, `Permalink`, `BlogName`, `Se
 (1, 'AVTECH CMS PRO', 'avtech-cms-pro', 'AVTECH CMS PRO', 'AVTECH CMS PRO', 'AVTECH CMS PRO', 'https://www.youtube.com/watch?v=nAkQ9On9fUE', '<iframe width=\"100%\" height=\"450\" src=\"https://www.youtube.com/embed/nAkQ9On9fUE\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', 36, NULL, NULL, '<p>&nbsp; &nbsp;&nbsp;</p>', NULL, '1', 1, 1, '2020-09-08 05:11:34', '2020-09-14 03:34:28'),
 (2, 'How to add EaZy Networking device_AVTECH CMS Plus', 'how-to-add-eazy-networking-device-avtech-cms-plus', 'How to add EaZy Networking device_AVTECH CMS Plus', 'How to add EaZy Networking device_AVTECH CMS Plus', 'How to add EaZy Networking device_AVTECH CMS Plus', 'https://www.youtube.com/watch?v=5KIHsVy3Jp4', '<iframe width=\"100%\" height=\"450\" src=\"https://www.youtube.com/embed/5KIHsVy3Jp4\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', 36, NULL, NULL, '<p class=\"title style-scope ytd-video-primary-info-renderer\">How to add EaZy Networking device_AVTECH CMS Plus</p>', 'How to add EaZy Networking device_AVTECH CMS Plus', '1', 1, 1, '2020-09-08 05:13:36', '2020-09-14 04:00:01'),
 (3, 'Event Search_AVTECH CMS PRO', 'event-search-avtech-cms-pro', 'Event Search_AVTECH CMS PRO', 'Event Search_AVTECH CMS PRO', 'Event Search_AVTECH CMS PRO', 'https://www.youtube.com/watch?v=zLX-Af2CRi4', '<iframe width=\"100%\" height=\"450\" src=\"https://www.youtube.com/embed/zLX-Af2CRi4\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>', 36, NULL, NULL, '<p><br /><br /></p>', 'Event Search_AVTECH CMS PRO', '1', 1, 1, '2020-09-08 05:17:09', '2020-09-14 03:59:29');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `business_categories`
+--
+
+CREATE TABLE `business_categories` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `Name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `business_categories`
+--
+
+INSERT INTO `business_categories` (`id`, `Name`, `created_at`, `updated_at`) VALUES
+(1, 'Bank, Insurance & Financial Institution', NULL, NULL),
+(2, 'Departmental Store', NULL, NULL),
+(3, 'Hospital', NULL, NULL),
+(4, 'IT Business', NULL, NULL),
+(5, 'Software Firm', NULL, NULL),
+(6, 'Builders/ Developers/ Real State', NULL, NULL),
+(7, 'Community Center', NULL, NULL),
+(8, 'Institute/ Training Center etc.', NULL, NULL),
+(9, 'Photo Studio/ Lab', NULL, NULL),
+(10, 'Pharmacy', NULL, NULL),
+(11, 'Clothing Store', NULL, NULL),
+(12, 'Beauty Perlar', NULL, NULL),
+(13, 'Salon', NULL, NULL),
+(14, 'By-Cycle Seller', NULL, NULL),
+(15, 'Jewelry', NULL, NULL),
+(16, 'Motor Cycle Seller & Showroom', NULL, NULL),
+(17, 'Residential Hotel', NULL, NULL),
+(18, 'Restaurent', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -438,13 +500,6 @@ CREATE TABLE `price_lists` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `price_lists`
---
-
-INSERT INTO `price_lists` (`id`, `PriceListName`, `created_at`, `updated_at`) VALUES
-(10, 'pricelist/september-2020.pdf', '2020-09-12 00:28:13', '2020-09-12 00:28:13');
 
 -- --------------------------------------------------------
 
@@ -967,7 +1022,7 @@ CREATE TABLE `site_profiles` (
 --
 
 INSERT INTO `site_profiles` (`id`, `ShortDescription`, `SiteName`, `EditorPublisher`, `CorporateAddress`, `HeadAddress`, `CorporatePhone`, `Phone1`, `phone2`, `phone3`, `CorporateEmail`, `Email2`, `Email3`, `MainLogo`, `MainLogoTitleText`, `MainLogoAltText`, `CopyRightText`, `DomainName`, `DesignerDeveloperName`, `DesignerDeveloperDomain`, `GoogleMap`, `created_at`, `updated_at`) VALUES
-(3, 'Soshine Marketing Company : We combine excellence with top quality, integrity and timeliness to provide 24/7 quality service specially designed to facilitate our users experience beyond expectation.', 'Soshine', 'Mithun Rana', '41/8, (Gr. & 1st Floor), Box Culvert Road, Purana Paltan, Dhaka-1000', '41/8, (Gr. & 1st Floor), Box Culvert Road, Purana Paltan, Dhaka-1000', '01678225976', '01678225976', NULL, NULL, 'info@soshinebd.com', 'info@soshinebd.com', NULL, 12, 'Soshine', 'soshine', '© 2020 Copyright: www.soshinebd.com', 'ww.soshinebd.com', 'Md. Mithun Rana', 'https://www.techhelpinfo.com', NULL, NULL, '2020-09-09 01:07:50');
+(3, 'Soshine Marketing Company : We combine excellence with top quality, integrity and timeliness to provide 24/7 quality service specially designed to facilitate our users experience beyond expectation.', 'Soshine', 'Mithun Rana', '41/8, (Gr. & 1st Floor), Box Culvert Road, Purana Paltan, Dhaka-1000', '41/8, (Gr. & 1st Floor), Box Culvert Road, Purana Paltan, Dhaka-1000', '01678225976', '01678225976', NULL, NULL, 'info@soshinebd.com', 'info@soshinebd.com', NULL, 12, 'Soshine', 'soshine', '© 2020 Copyright: www.soshinebd.com', 'ww.soshinebd.com', 'Md. Mithun Rana', 'https://www.techhelpinfo.com', NULL, NULL, '2020-09-22 02:43:53');
 
 -- --------------------------------------------------------
 
@@ -1107,21 +1162,26 @@ INSERT INTO `trainings` (`id`, `BrowserTitle`, `Permalink`, `TrainingName`, `Tra
 
 CREATE TABLE `users` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `username` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `phone` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `email` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `username` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
-  `password` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `customertype` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `partner` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'no',
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `techprotect` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `customertype` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `companyname` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `servicetype` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `country` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `servicetype` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `BirthDate` date DEFAULT NULL,
+  `EmployeeStatus` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'NO',
+  `TakeCare` int(11) DEFAULT 0,
+  `Designation` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Website` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `country` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `address` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `VerifyCode` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `VerifyCode` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `image` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `activestatus` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'EndUserNotActive',
+  `activestatus` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'EndUserNotActive',
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -1131,14 +1191,47 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `username`, `phone`, `email`, `email_verified_at`, `password`, `customertype`, `partner`, `companyname`, `servicetype`, `country`, `address`, `VerifyCode`, `image`, `activestatus`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Mithun Rana', 'mithunrana.developer@gmail.com', '0179777', 'mithunrana.developer@gmail.com', NULL, '$2y$10$TH6fku4aJwODHeGVZlMmN.xHdZlyXdGUOmBbGAjfas78HJhsFSIP6', 'Retailer', 'no', 'asdfasdfasdf', 'softwareservice', 'Bangladesh', 'Dhaka Bangladesh', '434678', NULL, 'TechHelpInfoAdmin', NULL, '2020-09-01 07:32:22', '2020-09-13 06:31:46'),
-(7, 'Mithun Rana', 'mithunranabd', '01797744248', 'mithunrana139@gmail.com', NULL, '$2y$10$xtJg6Uvq1XxUjvmR6HoP/.aSQpisLC.81xGnG.NxPCsyOBwTL87PS', 'End User', 'no', 'b', NULL, 'bangladesh', 'dhaka bangladesh', '537576', NULL, 'EndUserNotActive', NULL, '2020-09-09 02:31:01', '2020-09-09 02:31:01'),
-(8, 'Kaowsher Hamid', 'MKHT', '+8801676610343', 'mkh.najim@gmail.com', NULL, '$2y$10$d5mx2KbqKFPok.Dwt9j.2eqYn6Wpar3ZbmDMpp.FAJEDQY0m7aTBm', 'Retailer', 'no', 'M K Technology', 'itservice', 'bangladesh', 'dhaka bangladesh - 1000', '242477', 'user image/MKHT.jpg', 'TechHelpInfoAdmin', NULL, '2020-09-13 05:30:52', '2020-09-13 05:37:07');
+INSERT INTO `users` (`id`, `name`, `username`, `phone`, `email`, `email_verified_at`, `password`, `techprotect`, `customertype`, `companyname`, `servicetype`, `BirthDate`, `EmployeeStatus`, `TakeCare`, `Designation`, `Website`, `country`, `address`, `VerifyCode`, `image`, `activestatus`, `remember_token`, `created_at`, `updated_at`) VALUES
+(19, 'Mithun Rana', 'mithunrana93', '01797744248', 'mithunrana.developer@gmail.com', NULL, '$2y$10$X2IS3.8mCVPgSErvqeiJ2ebkrL3O0pm/JCFcYakrUm204p2oQVCBC', 'techhelpinfo12345678', 'Retailer', 'Tech Help Info', '4', NULL, 'YES', 19, NULL, NULL, 'Bangladesh', 'Dhaka Bangladesh', '234846', 'user image/mithunrana93.jpg', 'TechHelpInfoAdmin', NULL, '2020-06-18 07:04:41', '2020-11-14 12:28:03'),
+(41, 'Davidurinc', 'Davidurinc', '82592353175', 'panteleyegorin@yandex.com', NULL, '$2y$10$wGRYZLQEjpltdTe2qlxXaeFVJwZkwFsUC4JRY8gDLSAcQdeHLaQIm', NULL, '4', 'Davidurinc', 'Student', '2020-11-30', 'NO', 0, NULL, NULL, 'South Africa', 'http://whatsapplending.cf/', '187252', NULL, 'EndUserActive', NULL, '2020-09-10 23:10:33', '2020-11-13 13:39:59'),
+(42, 'AlfredHem', 'AlfredHem', '89412393684', 'e45ffie@gmail.com', NULL, '$2y$10$rNuijJQsnZtnYvZNQPrsEOMFusMh/Ky3.PjoPTghCZ1FtJmUfVDLy', NULL, 'Corporate', 'AlfredHem', 'softwareservice', NULL, 'NO', 0, NULL, NULL, 'United Kingdom', 'Fdsafsafsadfasdf', '430403', NULL, 'End User', NULL, '2020-09-16 05:59:25', '2020-11-12 10:05:41'),
+(43, 'QlmUqvwSRgra', 'HsjYfWhMuket', '4126873544', 'surnmenerjq@gmail.com', NULL, '$2y$10$L/AUyqsHTKMbiIlkz60Md.BsQJ3C3b73iQQXAHGjNbSPSO25UKM4a', NULL, 'Corporate', 'aqxtsmTXBLiODP', 'consultancyservice', NULL, 'NO', 0, NULL, NULL, 'lCpaKHBfrIELU', 'OrTqbpSfgLUPs', '989922', NULL, 'TechHelpInfoAdmin', NULL, '2020-10-25 16:03:43', '2020-11-12 10:05:48'),
+(46, 'Mithun Rana', 'mithunranabd', '01797744248', 'eng.mithunrana@gmail.com', NULL, '$2y$10$LQYeeg69KbCDdDoSHmyxCeedbPGMmw/v9q0PvjNjws6HF0YrMWvaK', 'techhelpinfo12345678', 'Retailer', 'Tech Help Info', 'itservice', NULL, 'NO', 0, NULL, NULL, 'bangladesh', 'dhaka bangladesh', '990795', NULL, 'EndUserActive', NULL, '2020-11-14 12:31:53', '2020-11-14 12:33:51'),
+(47, 'Mithun Rana', NULL, '01797744248', 'mithunrana.developer2@gmail.com', NULL, NULL, NULL, 'Retailer', 'Tech Help Info', '4', '2020-11-23', 'YES', 19, 'Engineer', NULL, 'Bangladesh', 'Dhaka bangladesh', NULL, NULL, 'TechHelpInfoSiteEditor', NULL, '2020-11-19 06:02:22', '2020-11-19 06:02:22');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_types`
+--
+
+CREATE TABLE `user_types` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `Name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Value` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `user_types`
+--
+
+INSERT INTO `user_types` (`id`, `Name`, `Value`, `created_at`, `updated_at`) VALUES
+(1, 'Student', 'Student', NULL, NULL),
+(2, 'End User', 'End User', NULL, NULL),
+(3, 'Retailer', 'Retailer', NULL, NULL),
+(4, 'Corporate', 'Corporate', NULL, NULL);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `active_statuses`
+--
+ALTER TABLE `active_statuses`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `authorization_certificates`
@@ -1160,6 +1253,12 @@ ALTER TABLE `blog_categories`
 ALTER TABLE `blog_tutorials`
   ADD PRIMARY KEY (`id`),
   ADD KEY `blog_tutorials_featuredimage_foreign` (`FeaturedImage`);
+
+--
+-- Indexes for table `business_categories`
+--
+ALTER TABLE `business_categories`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `cctv_camera_mega_pixels`
@@ -1327,8 +1426,20 @@ ALTER TABLE `users`
   ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
+-- Indexes for table `user_types`
+--
+ALTER TABLE `user_types`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `active_statuses`
+--
+ALTER TABLE `active_statuses`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `authorization_certificates`
@@ -1347,6 +1458,12 @@ ALTER TABLE `blog_categories`
 --
 ALTER TABLE `blog_tutorials`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `business_categories`
+--
+ALTER TABLE `business_categories`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `cctv_camera_mega_pixels`
@@ -1406,7 +1523,7 @@ ALTER TABLE `portfolios`
 -- AUTO_INCREMENT for table `price_lists`
 --
 ALTER TABLE `price_lists`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -1490,7 +1607,13 @@ ALTER TABLE `trainings`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+
+--
+-- AUTO_INCREMENT for table `user_types`
+--
+ALTER TABLE `user_types`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables

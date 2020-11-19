@@ -37,32 +37,30 @@
                                         @endif
                                         <div class="row">
                                             <div class="form-group col-sm-4">
-                                                <label for="customertype">Customer Type</label>
+                                                <label for="customertype">SELECT USER TYPE</label>
                                                 <select  id="customertype" class="form-control conditionalcustomer" name="customertype">
-                                                    <option selected disabled>SELECT CUSTOMER TYPE</option>/
-                                                    <option value="End User">End User</option>/
-                                                    <option value="Retailer">Retailer</option>/
-                                                    <option value="Corporate">Corporate</option>/
+                                                    <option selected disabled>SELECT USER TYPE</option>
+                                                    @foreach(\App\UserType::get() as $UserType)
+                                                        <option value="{{$UserType->Value}}" >{{$UserType->Name}}</option>
+                                                    @endforeach
                                                 </select>
                                             </div>
                                             <div class="form-group col-sm-4">
-                                                <label for="servicetype">SERVICE TYPE</label>
+                                                <label for="servicetype">Business Category</label>
                                                 <select id="servicetype" class="form-control conditionalcustomer" name="servicetype">
-                                                    <option selected disabled>SELECT SERVICE TYPE</option>/
-                                                    <option value="itservice">IT Service</option>/
-                                                    <option value="softwareservice">Software Service</option>/
-                                                    <option value="consultancyservice">Consultancy Service</option>/
+                                                    <option selected disabled>Business Category</option>
+                                                    @foreach(\App\BusinessCategory::get() as $BusinessCategory)
+                                                        <option value="{{$BusinessCategory->id}}" >{{$BusinessCategory->Name}}</option>
+                                                    @endforeach
                                                 </select>
                                             </div>
                                             <div class="form-group col-sm-4">
                                                 <label for="activestatus">Active Status</label>
                                                 <select id="activestatus" class="form-control conditionalcustomer" name="activestatus">
-                                                    <option selected disabled>SELECT CUSTOMER TYPE</option>/
-                                                    <option value="TechRegister">Tech Register</option>/
-                                                    <option value="EndUserNotActive">End User Deactive</option>
-                                                    <option value="EndUserActive">End User Active</option>
-                                                    <option value="TechHelpInfoAdmin">Admin</option>
-                                                    <option value="TechHelpInfoEditor">Editor</option>
+                                                    <option selected disabled>SELECT ACTIVE STATUS</option>
+                                                    @foreach(\App\ActiveStatus::get() as $ActiveStatus)
+                                                        <option value="{{$ActiveStatus->Value}}">{{$ActiveStatus->Name}}</option>
+                                                    @endforeach
                                                 </select>
                                             </div>
                                                 <div class="form-group col-sm-4">
@@ -94,7 +92,7 @@
     <!-- /.content-wrapper -->
 
     <footer class="main-footer">
-        <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+        <strong>Copyright &copy; 2014-2019 <a href="#">SOSHINE</a>.</strong>
         All rights reserved.
         <div class="float-right d-none d-sm-inline-block">
             <b>Version</b> 3.0.3-pre
@@ -114,7 +112,7 @@
                 url:"{{ url('admin/conditional-user-mail-count') }}",
                 method:'GET',
                 data:{activestatus:activestatus,servicetype:servicetype,customertype:customertype},
-                dataType:'json',
+                dataType:'html',
                 success:function(data)
                 {
                     $('#customercounter').empty();
@@ -130,7 +128,7 @@
             height: 200,
             width: '100%',
             relative_urls:false,
-            remove_script_host: false,
+            remove_script_host: true,
             valid_children : "+body[style],-body[div],p[strong|a|#text]",
             plugins: ["advlist autolink link image lists charmap print preview hr anchor pagebreak",
                 "searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",

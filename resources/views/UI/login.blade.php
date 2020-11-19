@@ -36,13 +36,13 @@
                             <h5 class="mb-4" style="font-size: 22px;">Login</h5>
                             <form action="{{ route('login') }}" method="POST">
                                 @csrf
-                                <input id="email" type="email" class="form-control mb-3 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Email address">
+                                <input  id="email" type="email" class="form-control mb-3 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Email address">
                                 @error('email')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                                <input id="password" type="password" class="form-control mb-3 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder=" Enter Your Password" >
+                                <input  id="password" type="password" class="form-control mb-3 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder=" Enter Your Password" >
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
                                      <strong>{{ $message }}</strong>

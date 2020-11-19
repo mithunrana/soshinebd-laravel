@@ -79,10 +79,10 @@
                                  <label style="margin-bottom: 0px;" for="servicetype">SERVICE TYPE</label>
                                  @if($errors->has('servicetype'))<small style="color:red;font-weight: bold;">{{$errors->first('servicetype')}}</small>@endif
                                  <select id="servicetype" class="input-field-design" name="servicetype">
-                                     <option selected disabled>SELECT SERVICE TYPE</option>
-                                     <option value="itservice" {{ old('servicetype') == 'itservice' ? 'selected' : '' }}>IT Service</option>
-                                     <option value="softwareservice" {{ old('servicetype') == 'softwareservice' ? 'selected' : '' }}>Software Service</option>
-                                     <option value="consultancyservice" {{ old('servicetype') == 'consultancyservice' ? 'selected' : '' }}>Consultancy Service</option>
+                                     <option selected disabled>SELECT BUSINESS CATEGORY</option>
+                                     @foreach(\App\BusinessCategory::get() as $BusinessCategory)
+                                         <option value="{{$BusinessCategory->id}}" >{{$BusinessCategory->Name}}</option>
+                                     @endforeach
                                  </select>
                              </div>
                              <div class="form-group col-6 col-lg-6">

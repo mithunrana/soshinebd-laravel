@@ -55,10 +55,11 @@ Route::post('/user-panel-info-update','UserDataController@userInfoUpdate')->midd
 Route::post('/user-panel-image-update','UserDataController@userImageUpload')->middleware('auth');
 
 
+
 Route::get('admin/customer-mail-send','CustomerMailSystem@CustomerMail')->middleware('AdminUser');
 Route::post('admin/customer-mail-send','CustomerMailSystem@CustomerMailSend')->middleware('AdminUser');
 Route::get('admin/conditional-user-mail-count','CustomerMailSystem@ConditionalUserCount')->middleware('AdminUser');
-
+Route::get('admin/exiting-check','UserDataController@exitingCheck')->middleware('AdminUser');
 
 
 

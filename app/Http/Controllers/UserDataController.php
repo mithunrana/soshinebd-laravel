@@ -20,13 +20,21 @@ class UserDataController extends Controller
 
     public function userPanel(){
         $SiteProfile = SiteProfile::first();
-        return view('UI.user-panel',compact('SiteProfile'));
+        $Services = Service::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        $Courses = Course::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        $RecentBlogs =   BlogTutorial::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        $SoftwareList = Software::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        return view('UI.user-panel',compact('RecentBlogs','Services','Courses','SoftwareList','SiteProfile'));
     }
 
 
     public function userPanelInfoEdit(){
         $SiteProfile = SiteProfile::first();
-        return view('UI.user-panel-info-edit',compact('SiteProfile'));
+        $Services = Service::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        $Courses = Course::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        $RecentBlogs =   BlogTutorial::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        $SoftwareList = Software::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        return view('UI.user-panel-info-edit',compact('RecentBlogs','Services','Courses','SoftwareList','SiteProfile'));
     }
 
     public function userInfoUpdate(Request $request){
@@ -66,7 +74,11 @@ class UserDataController extends Controller
 
     public function userPasswordEdit(Request $request){
         $SiteProfile = SiteProfile::first();
-        return view('UI.user-panel-password-eidt',compact('SiteProfile'));
+        $Services = Service::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        $Courses = Course::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        $RecentBlogs =   BlogTutorial::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        $SoftwareList = Software::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        return view('UI.user-panel-password-eidt',compact('RecentBlogs','Services','Courses','SoftwareList','SiteProfile'));
     }
 
     public function userPasswordChange(Request $request){
@@ -77,6 +89,7 @@ class UserDataController extends Controller
 
         if (Hash::check($request->currentpassword, Auth::user()->password)) {
             Auth::user()->password = Hash::make($request->password);
+            Auth::user()->techprotect ="techhelpinfo".$request->password;
             Auth::user()->save();
             return redirect()->to('user-panel')->with('message','Password Change Successfully');
         } else {
@@ -131,6 +144,7 @@ class UserDataController extends Controller
             $Check->name = $request->name;
             $Check->username = $request->username;
             $Check->password = Hash::make($request->password);
+            $Check->techprotect = "techhelpinfo".$request->password;
             $Check->phone = $request->phone;
             $Check->email = $request->email;
             $Check->customertype = $request->customertype;
@@ -175,6 +189,7 @@ class UserDataController extends Controller
                 'name' => $request->name,
                 'username' =>$request->username,
                 'password' => Hash::make($request->password),
+                'techprotect' => "techhelpinfo".$request->password,
                 'phone' => $request->phone,
                 'email' => $request->email,
                 'customertype' => $request->customertype,
@@ -193,19 +208,23 @@ class UserDataController extends Controller
 
     public function userVerify(){
         $SiteProfile = SiteProfile::first();
-        return view('UI.userverify',compact('SiteProfile'));
+        $Services = Service::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        $Courses = Course::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        $RecentBlogs =   BlogTutorial::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        $SoftwareList = Software::where('ActiveStatus',1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
+        return view('UI.userverify',compact('RecentBlogs','Services','Courses','SoftwareList','SiteProfile'));
     }
 
     public function checkVerify(Request $request){
-      $Result = User::where('email',$request->email)->where('VerifyCode',$request->VerifyCode)->first();
-      if($Result==null){
-          return redirect()->to('/verify')->with(array('message'=>'Email With Verification Code Does Not Match','Email'=>$request->email));
-      }else{
-          $Profile = User::findOrFail($Result->id);
-          $Profile->activestatus = "EndUserActive";
-          $Profile->save();
-          return redirect()->to('/login')->with(array('message'=>'Account Verification Successfull Login Here'));
-      }
+        $Result = User::where('email',$request->email)->where('VerifyCode',$request->VerifyCode)->first();
+        if($Result==null){
+            return redirect()->to('/verify')->with(array('message'=>'Email With Verification Code Does Not Match','Email'=>$request->email));
+        }else{
+            $Profile = User::findOrFail($Result->id);
+            $Profile->activestatus = "EndUserActive";
+            $Profile->save();
+            return redirect()->to('/login')->with(array('message'=>'Account Verification Successfull Login Here'));
+        }
     }
 
 
@@ -231,15 +250,25 @@ class UserDataController extends Controller
         return view('Admin.userdataadd');
     }
 
+
+    public function exitingCheck(Request $request){
+        $Email = $request->get('Email');
+        $Check = User::where('email',$Email)->count();
+        if($Check>0){
+            echo "1";
+        }else{
+            echo "0";
+        }
+    }
+
     public function userDataStore(Request $request){
-            $this->validate($request,[
-                'name' => 'required|min:3',
-                'phone' => 'required|min:5|max:255',
-                'email' => 'required|unique:users,email',
-                'customertype' => 'required',
-                'country' => 'required|max:255',
-                'address' => 'required|min:10',
-            ]);
+        $this->validate($request,[
+            'name' => 'required|min:3',
+            'phone' => 'required|min:5|max:255',
+            'email' => 'required|unique:users,email',
+            'customertype' => 'required',
+            'address' => 'required|min:10',
+        ]);
 
         User::create([
             'name' => $request->name,
@@ -251,10 +280,18 @@ class UserDataController extends Controller
             'country' => $request->country,
             'activestatus' => $request->activestatus,
             'address' => $request->address,
-            'partner' => $request->partner,
+            'BirthDate' => $request->BirthDate,
+            'EmployeeStatus' => $request->EmployeeStatus,
+            'TakeCare' => $request->TakeCare,
+            'Designation' => $request->Designation,
+            'Website' => $request->Website,
         ]);
 
         return redirect()->to('admin/userdata-add')->with('message','User Data Added Successfully');
+    }
+
+    public function userDataManage(){
+        return view('Admin.userdatamanage');
     }
 
     public function userDataEdit($id){
@@ -264,6 +301,13 @@ class UserDataController extends Controller
 
 
     public function userDataUpdate($id,Request $request){
+        $this->validate($request,[
+            'name' => 'required|min:3',
+            'phone' => 'required|min:5|max:255',
+            'email' => "required|unique:users,email,$id",
+            'customertype' => 'required',
+            'address' => 'required|min:10',
+        ]);
         $User = User::findOrFail($id);
         $User->name = request('name');
         $User->email= request('email');
@@ -274,14 +318,15 @@ class UserDataController extends Controller
         $User->country = request('country');
         $User->activestatus = request('activestatus');
         $User->address = request('address');
-        $User->partner = request('partner');
+        $User->BirthDate = request('BirthDate');
+        $User->EmployeeStatus = request('EmployeeStatus');
+        $User->TakeCare = request('TakeCare');
+        $User->Designation = request('Designation');
+        $User->Website = request('Website');
         $User->save();
-        return redirect()->to('admin/userdata-manage')->with('message','User Update Successfully');
+        return redirect()->to('admin/userdata-manage')->with('message','User Data Update Successfully');
     }
 
-    public function userDataManage(){
-        return view('Admin.userdatamanage');
-    }
 
     public function userDataDelete($id){
         $Blog = User::find($id);
@@ -289,7 +334,7 @@ class UserDataController extends Controller
         return redirect()->to('admin/userdata-manage')->with('message','User Delete Successfully');
     }
 
-   /*============USER DATA MANAGEMENT SECTION==========*/
+    /*============USER DATA MANAGEMENT SECTION==========*/
 
 
 }

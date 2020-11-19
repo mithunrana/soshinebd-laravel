@@ -9,9 +9,7 @@
     <!-- Main Sidebar Container -->
 @include('Admin.inc.adminSideBar')
 
-<!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-        <!-- Main content -->
         <section id="app" style="margin-top: 10px;" class="content">
             <div class="row">
                 <div class="col-sm-12">
@@ -32,11 +30,13 @@
                                         @if($errors->has('name'))<small style="color:red;font-weight: bold;">{{$errors->first('name')}}</small>@endif
                                         <input type="text" class="form-control"  id="name" value="{{$UserData->name}}" placeholder="Enter Name Here"  name="name">
                                     </div>
+
                                     <div class="form-group col-6  col-lg-4">
                                         <label style="margin-bottom: 0px;" for="phone">Email</label>
                                         @if($errors->has('email'))<small style="color:red;font-weight: bold;">{{$errors->first('email')}}</small>@endif
                                         <input type="text" class="form-control"  value="{{$UserData->email}}" placeholder="Enter Email Here" id="email" name="email" >
                                     </div>
+
                                     <div class="form-group col-6  col-lg-4">
                                         <label style="margin-bottom: 0px;" for="phone">Phone</label>
                                         @if($errors->has('phone'))<small style="color:red;font-weight: bold;">{{$errors->first('phone')}}</small>@endif
@@ -46,56 +46,85 @@
 
 
                                 <div class="row">
-                                    <div class="form-group col-6 col-lg-6">
-                                        <label style="margin-bottom: 0px;" for="customertype">Customer Type</label>
+                                    <div class="form-group col-6 col-lg-4">
+                                        <label style="margin-bottom: 0px;" for="customertype">SELECT USER TYPE</label>
                                         @if($errors->has('customertype'))<small style="color:red;font-weight: bold;">{{$errors->first('customertype')}}</small>@endif
                                         <select id="customertype" class="form-control" name="customertype">
-                                            <option selected disabled>SELECT CUSTOMER TYPE</option>/
-                                            <option value="End User" {{$UserData->customertype == 'End User' ? 'selected="selected"' : ''}}>End User</option>/
-                                            <option value="Retailer" {{$UserData->customertype == 'Retailer' ? 'selected="selected"' : ''}}>Retailer</option>/
-                                            <option value="Corporate" {{$UserData->customertype == 'Corporate' ? 'selected="selected"' : ''}}>Corporate</option>/
+                                            <option selected disabled>SELECT USER TYPE</option>
+                                            @foreach(\App\UserType::get() as $UserType)
+                                                <option value="{{$UserType->Value}}" {{$UserData->customertype == $UserType->Value ? 'selected="selected"' : ''}}>{{$UserType->Name}}</option>
+                                            @endforeach
                                         </select>
                                     </div>
-                                    <div class="form-group col-6 col-lg-6 ifcompany">
+
+                                    <div class="form-group col-6 col-lg-4 ifcompany">
+                                        <label style="margin-bottom: 0px;" for="servicetype">SELECT BUSINESS CATEGORY</label>
+                                        @if($errors->has('servicetype'))<small style="color:red;font-weight: bold;">{{$errors->first('servicetype')}}</small>@endif
+                                        <select id="servicetype" class="form-control" name="servicetype">
+                                            <option selected disabled>SELECT BUSINESS CATEGORY</option>
+                                            @foreach(\App\BusinessCategory::get() as $BusinessCategory)
+                                                <option value="{{$BusinessCategory->id}}"  {{$UserData->servicetype == $BusinessCategory->id ? 'selected="selected"' : ''}}>{{$BusinessCategory->Name}}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+
+
+                                    <div class="form-group col-6 col-lg-4">
+                                        <label style="margin-bottom: 0px;" for="activestatus">Active Status</label>
+                                        @if($errors->has('activestatus'))<small style="color:red;font-weight: bold;">{{$errors->first('activestatus')}}</small>@endif
+                                        <select id="activestatus" class="form-control" name="activestatus">
+                                            <option selected disabled>SELECT ACTIVE STATUS</option>
+                                            @foreach(\App\ActiveStatus::get() as $ActiveStatus)
+                                                <option value="{{$ActiveStatus->Value}}" {{$UserData->activestatus == $ActiveStatus->Value ? 'selected="selected"' : ''}}>{{$ActiveStatus->Name}}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-6 col-lg-4 ifcompany">
                                         <label style="margin-bottom: 0px;" for="companyname">Company Name</label>
                                         @if($errors->has('companyname'))<small style="color:red;font-weight: bold;">{{$errors->first('companyname')}}</small>@endif
                                         <input type="text" class="form-control" value="{{$UserData->companyname}}" placeholder="Company Name" id="companyname" name="companyname" >
                                     </div>
-                                    <div class="form-group col-6 col-lg-6 ifcompany">
-                                        <label style="margin-bottom: 0px;" for="servicetype">SERVICE TYPE</label>
-                                        @if($errors->has('servicetype'))<small style="color:red;font-weight: bold;">{{$errors->first('servicetype')}}</small>@endif
-                                        <select id="servicetype" class="form-control" name="servicetype">
-                                            <option selected disabled>SELECT SERVICE TYPE</option>/
-                                            <option value="itservice" {{$UserData->servicetype == 'itservice' ? 'selected="selected"' : ''}}>IT Service</option>/
-                                            <option value="softwareservice" {{$UserData->servicetype == 'softwareservice' ? 'selected="selected"' : ''}}>Software Service</option>/
-                                            <option value="consultancyservice" {{$UserData->servicetype == 'consultancyservice' ? 'selected="selected"' : ''}}>Consultancy Service</option>/
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-6 col-lg-6">
+
+                                    <div class="form-group col-12 col-lg-4">
                                         <label style="margin-bottom: 0px;" for="country">Country</label>
                                         @if($errors->has('country'))<small style="color:red;font-weight: bold;">{{$errors->first('country')}}</small>@endif
                                         <input type="text" class="form-control" value="{{$UserData->country}}" placeholder="Enter Client Country Name" id="country" name="country" >
                                     </div>
-                                    <div class="form-group col-6 col-lg-6">
-                                        <label style="margin-bottom: 0px;" for="activestatus">Active Status</label>
-                                        @if($errors->has('activestatus'))<small style="color:red;font-weight: bold;">{{$errors->first('activestatus')}}</small>@endif
-                                        <select id="activestatus" class="form-control" name="activestatus">
-                                            <option selected disabled>SELECT CUSTOMER TYPE</option>/
-                                            <option value="TechRegister" {{$UserData->activestatus == 'TechRegister' ? 'selected="selected"' : ''}} >Tech Register</option>/
-                                            <option value="EndUserNotActive	" {{$UserData->activestatus == '	EndUserNotActive	' ? 'selected="selected"' : ''}} >End User Deactive</option>
-                                            <option value="EndUserActive" {{$UserData->activestatus == 'EndUserActive' ? 'selected="selected"' : ''}} >End User Active</option>
-                                            <option value="TechHelpInfoAdmin" {{$UserData->activestatus == 'TechHelpInfoAdmin' ? 'selected="selected"' : ''}}>Admin</option>
-                                            <option value="TechHelpInfoSiteEditor" {{$UserData->activestatus == 'TechHelpInfoSiteEditor' ? 'selected="selected"' : ''}} >Editor</option>
+
+                                    <div class="form-group col-6 col-lg-4">
+                                        <label style="margin-bottom: 0px;" for="BirthDate">Birth Date</label>
+                                        @if($errors->has('BirthDate'))<small style="color:red;font-weight: bold;">{{$errors->first('BirthDate')}}</small>@endif
+                                        <input type="date" class="form-control" value="{{$UserData->BirthDate}}" placeholder="Enter Birth Date" id="BirthDate" name="BirthDate" >
+                                    </div>
+
+                                    <div class="form-group col-6 col-lg-4">
+                                        <label style="margin-bottom: 0px;" for="EmployeeStatus">Employee Status</label>
+                                        <select id="EmployeeStatus" class="form-control" name="EmployeeStatus">
+                                            <option>Check Employee Status</option>
+                                            <option value="NO" {{$UserData->EmployeeStatus == 'NO' ? 'selected="selected"' : ''}}>NO</option>
+                                            <option value="YES" {{$UserData->EmployeeStatus == 'YES' ? 'selected="selected"' : ''}}>YES</option>
                                         </select>
                                     </div>
-                                    <div class="form-group col-6 col-lg-6">
-                                        <label style="margin-bottom: 0px;" for="activestatus">Partner</label>
-                                        @if($errors->has('partner'))<small style="color:red;font-weight: bold;">{{$errors->first('partner')}}</small>@endif
-                                        <select id="partner" class="form-control" name="partner">
-                                            <option selected disabled>SELECT Partner TYPE</option>/
-                                            <option value="no" {{$UserData->partner == 'no' ? 'selected="selected"' : ''}} >NO</option>/
-                                            <option value="yes" {{$UserData->partner == 'yes' ? 'selected="selected"' : ''}} >YES</option>
+
+                                    <div class="form-group col-6 col-lg-4">
+                                        <label style="margin-bottom: 0px;" for="TakeCare">Take Care</label>
+                                        <select id="TakeCare" class="form-control" name="TakeCare">
+                                            <option>Select For Take Care</option>
+                                            @foreach(\App\User::where('EmployeeStatus','YES')->get() as $Employee)
+                                                <option value="{{$Employee->id}}" {{$UserData->TakeCare == $Employee->id ? 'selected="selected"' : ''}}>{{$Employee->name}}</option>
+                                            @endforeach
                                         </select>
+                                    </div>
+                                    <div class="form-group col-6 col-lg-4">
+                                        <label style="margin-bottom: 0px;" for="Designation">Designation</label>
+                                        @if($errors->has('Designation'))<small style="color:red;font-weight: bold;">{{$errors->first('Designation')}}</small>@endif
+                                        <input type="text" class="form-control" value="{{old('Designation')}}" placeholder="Enter User Designation" id="Designation" name="Designation" >
+                                    </div>
+                                    <div class="form-group col-6 col-lg-4">
+                                        <label style="margin-bottom: 0px;" for="Website">Website</label>
+                                        @if($errors->has('Website'))<small style="color:red;font-weight: bold;">{{$errors->first('Website')}}</small>@endif
+                                        <input type="text" class="form-control" value="{{old('Website')}}" placeholder="Enter Website Name" id="Website" name="Website" >
                                     </div>
                                 </div>
 
@@ -115,10 +144,9 @@
             </div>
         </section>
     </div>
-    <!-- /.content-wrapper -->
 
     <footer class="main-footer">
-        <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+        <strong>Copyright &copy; 2014-2019 <a href="#">soshine</a>.</strong>
         All rights reserved.
         <div class="float-right d-none d-sm-inline-block">
             <b>Version</b> 3.0.3-pre

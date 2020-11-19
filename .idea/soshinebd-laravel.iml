@@ -7,9 +7,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="hikvisionbd-laravel" />
-    <orderEntry type="module" module-name="hikvisionbd-laravel" />
-    <orderEntry type="module" module-name="hikvisionbd-laravel" />
-    <orderEntry type="module" module-name="techhelpinfo" />
   </component>
 </module>

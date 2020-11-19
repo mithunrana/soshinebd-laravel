@@ -2,42 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f101b50b-501f-4382-a85f-fe4b512560b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../drinkcan/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../drinkcan/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../drinkcan/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../drinkcan/app/Http/Controllers/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/app/Http/Controllers/SiteProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../drinkcan/app/Http/Controllers/SiteProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/app/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/../drinkcan/app/Products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/public/frontend/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/../drinkcan/public/frontend/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/public/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../drinkcan/public/frontend/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/public/frontend/logo/drink-can.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/public/frontend/logo/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/public/images/avtech-distributor-in-bangladesh.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../drinkcan/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/resources/views/Admin/inc/header source.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../drinkcan/resources/views/Admin/inc/header source.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/resources/views/frontend/inc/headersource.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../drinkcan/resources/views/frontend/inc/headersource.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/resources/views/frontend/inc/menubar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../drinkcan/resources/views/frontend/inc/menubar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../drinkcan/resources/views/frontend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../drinkcan/resources/views/frontend/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hikvisionbd-laravel/.idea/hikvisionbd-laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../hikvisionbd-laravel/.idea/hikvisionbd-laravel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hikvisionbd-laravel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hikvisionbd-laravel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hikvisionbd-laravel/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../hikvisionbd-laravel/app/Http/Controllers/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hikvisionbd-laravel/app/Http/Controllers/SiteProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../hikvisionbd-laravel/app/Http/Controllers/SiteProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hikvisionbd-laravel/public/UI/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../hikvisionbd-laravel/public/UI/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hikvisionbd-laravel/resources/views/Admin/inc/adminSideBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../hikvisionbd-laravel/resources/views/Admin/inc/adminSideBar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hikvisionbd-laravel/resources/views/UI/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../hikvisionbd-laravel/resources/views/UI/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../own-hikvisionbd/app/Http/Controllers/SiteProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../own-hikvisionbd/app/Http/Controllers/SiteProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../own-hikvisionbd/public/UI/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../own-hikvisionbd/public/UI/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../own-hikvisionbd/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/../own-hikvisionbd/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../own-hikvisionbd/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../own-hikvisionbd/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/soshinebd-laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/soshinebd-laravel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SiteProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SiteProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/UI/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/UI/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pricelist/september-2020.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/inc/header source.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/inc/header source.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/UI/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/UI/support-view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/support-view.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../techhelpinfo/app/Http/Controllers/SiteProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../techhelpinfo/app/Http/Controllers/SiteProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../techhelpinfo/public/UI/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../techhelpinfo/public/UI/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/UI/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/UI/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,54 +27,99 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>price</find>
-      <find>support</find>
-      <find>soft</find>
-      <find>ProductsType</find>
+      <find>footer-item ul li</find>
+      <find>.menu-icon</find>
+      <find>showcase</find>
+      <find>sendMail</find>
+      <find>products</find>
+      <find>products-manag</find>
+      <find>order</find>
+      <find>blog</find>
+      <find>export</find>
+      <find>OrderController</find>
+      <find>min-height: 424px;</find>
+      <find>.showcase .carousel-item</find>
+      <find>showcase .carousel-item</find>
+      <find>user-panel</find>
+      <find>UserDataController</find>
+      <find>forget</find>
+      <find>verif</find>
+      <find>check-verify</find>
+      <find>checkVerify</find>
+      <find>thanaNameUpdate</find>
+      <find>than</find>
+      <find>storeLocationManage</find>
+      <find>products-primary-catby-secondary-cat</find>
+      <find>primaryCategoryBySecondary</find>
+      <find>DrinkCan Classic 23</find>
+      <find>input</find>
+      <find>Order</find>
+      <find>demo</find>
+      <find>sitepro</find>
+      <find>product</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Order</replace>
+      <replace>showcase .carousel-item</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../techhelpinfo" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../drinkcan" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/Mail/conditional-user-mail-send.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CustomerMailSystem.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/CustomerMailSendingSystem.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/inc/menubar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/contact.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/userdataadd.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/userdataedit.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" />
-        <option value="$PROJECT_DIR$/../techhelpinfo/resources/views/UI/tutorialview.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/support-view.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/support.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/productsview.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/inc/adminSideBar.blade.php" />
-        <option value="$PROJECT_DIR$/../hikvisionbd-laravel/resources/views/Admin/inc/adminSideBar.blade.php" />
-        <option value="$PROJECT_DIR$/../hikvisionbd-laravel/app/Http/Controllers/ProductsController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
-        <option value="$PROJECT_DIR$/../own-hikvisionbd/app/Http/Controllers/ProductsController.php" />
-        <option value="$PROJECT_DIR$/../own-hikvisionbd/resources/views/UI/index.blade.php" />
-        <option value="$PROJECT_DIR$/../own-hikvisionbd/resources/views/UI/about.blade.php" />
-        <option value="$PROJECT_DIR$/../own-hikvisionbd/resources/views/UI/success-history.blade.php" />
-        <option value="$PROJECT_DIR$/../own-hikvisionbd/resources/views/UI/career.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/UI/about.blade.php" />
-        <option value="$PROJECT_DIR$/../drinkcan/app/Products.php" />
-        <option value="$PROJECT_DIR$/../drinkcan/app/Http/Controllers/ProductsController.php" />
-        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/inc/header source.blade.php" />
-        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/inc/headersource.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/order-gkk.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/productsview.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/register.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/sitemap.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/storelocation.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/user-panel.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/user-panel-info-edit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/user-panel-password-eidt.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/user-verify.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/water-in-news.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/water-purifire.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/authorisedcertificateedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/authorisedcertificateadd.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/authorisedcertificatemanage.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/blogcategoryedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/blogCategoryView.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/blogmanage.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/cctvbrandedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/cliendfeedbackadd.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/clientfeedbackedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/ComplaineEdit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/electropornoslideradd.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/eventsadd.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/eventsedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/faqedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/faqmanage.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/homedemoedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/newsadd.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/newsedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/portfolioadd.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/portfolioedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/productaboutedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/productaboutmanage.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/productfeatureedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsadd.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsdiscoveradd.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsdiscoveredit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsprimarycategory.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/produtfeaturemanage.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/quicklinks.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/quicklinksedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/quicklinksview.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/storelocationedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/storelocationmanage.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/thananameedit.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/thananamemanage.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/water-and-helth.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/resources/views/Admin/inc/adminSideBar.blade.php" />
+        <option value="$PROJECT_DIR$/../drinkcan/public/frontend/css/style.css" />
         <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/inc/menubar.blade.php" />
-        <option value="$PROJECT_DIR$/../drinkcan/public/frontend/css/responsive.css" />
-        <option value="$PROJECT_DIR$/../drinkcan/resources/views/frontend/index.blade.php" />
-        <option value="$PROJECT_DIR$/../drinkcan/app/Http/Controllers/SiteProfileController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SiteProfileController.php" />
-        <option value="$PROJECT_DIR$/../hikvisionbd-laravel/app/Http/Controllers/SiteProfileController.php" />
-        <option value="$PROJECT_DIR$/../own-hikvisionbd/app/Http/Controllers/SiteProfileController.php" />
-        <option value="$PROJECT_DIR$/../techhelpinfo/app/Http/Controllers/SiteProfileController.php" />
       </list>
     </option>
   </component>
@@ -197,10 +213,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="-181" />
+    <option name="y" value="26" />
+    <option name="width" value="1186" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -215,10 +231,15 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../techhelpinfo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jobportal" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\drinkcan\resources\views\frontend" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -281,21 +302,181 @@
       <workItem from="1601551128664" duration="1509000" />
       <workItem from="1601554687300" duration="1045000" />
       <workItem from="1601561830611" duration="612000" />
+      <workItem from="1601700380546" duration="1635000" />
+      <workItem from="1601703165259" duration="186000" />
+      <workItem from="1601703369707" duration="1804000" />
+      <workItem from="1601705354023" duration="1798000" />
+      <workItem from="1601707244206" duration="1203000" />
+      <workItem from="1601709268935" duration="1553000" />
+      <workItem from="1601711190341" duration="1556000" />
+      <workItem from="1601727748772" duration="1373000" />
+      <workItem from="1601729693127" duration="1258000" />
+      <workItem from="1601732522339" duration="1694000" />
+      <workItem from="1601734848050" duration="1234000" />
+      <workItem from="1601786458473" duration="601000" />
+      <workItem from="1601791426735" duration="1925000" />
+      <workItem from="1601795478737" duration="1889000" />
+      <workItem from="1601809154431" duration="1567000" />
+      <workItem from="1601810985972" duration="1817000" />
+      <workItem from="1601812946759" duration="1426000" />
+      <workItem from="1601815388595" duration="1850000" />
+      <workItem from="1601817316196" duration="1792000" />
+      <workItem from="1601819135272" duration="1608000" />
+      <workItem from="1601821154031" duration="1791000" />
+      <workItem from="1601822964868" duration="1722000" />
+      <workItem from="1601826807814" duration="1788000" />
+      <workItem from="1601828658819" duration="1790000" />
+      <workItem from="1601876303361" duration="1720000" />
+      <workItem from="1601878065060" duration="1798000" />
+      <workItem from="1601879879325" duration="1883000" />
+      <workItem from="1601886011593" duration="1802000" />
+      <workItem from="1601891563899" duration="1459000" />
+      <workItem from="1601894288562" duration="874000" />
+      <workItem from="1601896285953" duration="1971000" />
+      <workItem from="1601898533332" duration="600000" />
+      <workItem from="1601904540012" duration="1804000" />
+      <workItem from="1601906596410" duration="1585000" />
+      <workItem from="1601962027759" duration="1552000" />
+      <workItem from="1601963818807" duration="1579000" />
+      <workItem from="1601965641433" duration="1821000" />
+      <workItem from="1601970315032" duration="1244000" />
+      <workItem from="1601973927419" duration="1393000" />
+      <workItem from="1601977946596" duration="1859000" />
+      <workItem from="1601982259056" duration="1867000" />
+      <workItem from="1601984741070" duration="955000" />
+      <workItem from="1601993358210" duration="1651000" />
+      <workItem from="1601996031475" duration="1878000" />
+      <workItem from="1601999097253" duration="1082000" />
+      <workItem from="1602047242246" duration="1743000" />
+      <workItem from="1602054933048" duration="702000" />
+      <workItem from="1602061466799" duration="601000" />
+      <workItem from="1602063783342" duration="1051000" />
+      <workItem from="1602068730796" duration="2013000" />
+      <workItem from="1602074917121" duration="1712000" />
+      <workItem from="1602076748654" duration="792000" />
+      <workItem from="1602078573945" duration="1355000" />
+      <workItem from="1602081131429" duration="1793000" />
+      <workItem from="1602082960340" duration="1799000" />
+      <workItem from="1602084952207" duration="1067000" />
+      <workItem from="1602087273560" duration="288000" />
+      <workItem from="1602133767274" duration="1185000" />
+      <workItem from="1602136058656" duration="1336000" />
+      <workItem from="1602143396299" duration="1796000" />
+      <workItem from="1602145212197" duration="1411000" />
+      <workItem from="1602147662976" duration="1885000" />
+      <workItem from="1602149867490" duration="1789000" />
+      <workItem from="1602396578565" duration="1576000" />
+      <workItem from="1602398565724" duration="1089000" />
+      <workItem from="1602400582713" duration="2015000" />
+      <workItem from="1602402615073" duration="1027000" />
+      <workItem from="1602404528400" duration="1839000" />
+      <workItem from="1602406597785" duration="1795000" />
+      <workItem from="1602408535365" duration="1300000" />
+      <workItem from="1602411296660" duration="1758000" />
+      <workItem from="1602413212256" duration="1793000" />
+      <workItem from="1602417391540" duration="1513000" />
+      <workItem from="1602419308903" duration="1937000" />
+      <workItem from="1602422266810" duration="1708000" />
+      <workItem from="1602424120079" duration="783000" />
+      <workItem from="1602429922130" duration="1740000" />
+      <workItem from="1602564940090" duration="1367000" />
+      <workItem from="1602566751901" duration="1355000" />
+      <workItem from="1602568733117" duration="1908000" />
+      <workItem from="1602570730947" duration="1328000" />
+      <workItem from="1602575721421" duration="1243000" />
+      <workItem from="1602577753404" duration="1768000" />
+      <workItem from="1602579639598" duration="1795000" />
+      <workItem from="1602581557261" duration="669000" />
+      <workItem from="1602587219637" duration="1976000" />
+      <workItem from="1602589265184" duration="1905000" />
+      <workItem from="1602591389004" duration="1840000" />
+      <workItem from="1602593271709" duration="1712000" />
+      <workItem from="1602651766703" duration="1796000" />
+      <workItem from="1602653600337" duration="1834000" />
+      <workItem from="1602656929493" duration="1433000" />
+      <workItem from="1602659217062" duration="1906000" />
+      <workItem from="1602661218653" duration="1598000" />
+      <workItem from="1602663307138" duration="703000" />
+      <workItem from="1602665847153" duration="1793000" />
+      <workItem from="1602667725319" duration="2303000" />
+      <workItem from="1602670374157" duration="1698000" />
+      <workItem from="1602672360442" duration="1794000" />
+      <workItem from="1602674195741" duration="1799000" />
+      <workItem from="1602676180179" duration="1669000" />
+      <workItem from="1602678083062" duration="2017000" />
+      <workItem from="1602680519629" duration="793000" />
+      <workItem from="1602741399018" duration="1310000" />
+      <workItem from="1602743964154" duration="1716000" />
+      <workItem from="1602745799674" duration="1009000" />
+      <workItem from="1602748459765" duration="1071000" />
+      <workItem from="1602755372590" duration="1387000" />
+      <workItem from="1602757292197" duration="1717000" />
+      <workItem from="1602765669408" duration="2052000" />
+      <workItem from="1602911767005" duration="1480000" />
+      <workItem from="1602914427714" duration="1777000" />
+      <workItem from="1602916238563" duration="1434000" />
+      <workItem from="1602918473487" duration="1398000" />
+      <workItem from="1602926746187" duration="1777000" />
+      <workItem from="1602928592581" duration="2124000" />
+      <workItem from="1602930753260" duration="2136000" />
+      <workItem from="1602932967901" duration="1791000" />
+      <workItem from="1602937645343" duration="2188000" />
+      <workItem from="1602940276532" duration="463000" />
+      <workItem from="1602996720656" duration="779000" />
+      <workItem from="1603001478105" duration="1008000" />
+      <workItem from="1603004883185" duration="698000" />
+      <workItem from="1603008779584" duration="1390000" />
+      <workItem from="1603012110820" duration="174000" />
+      <workItem from="1603018527039" duration="754000" />
+      <workItem from="1603020407428" duration="1463000" />
+      <workItem from="1603023631645" duration="1777000" />
+      <workItem from="1603025474260" duration="1356000" />
+      <workItem from="1603083322704" duration="1761000" />
+      <workItem from="1603085164688" duration="1898000" />
+      <workItem from="1603087103578" duration="1923000" />
+      <workItem from="1603090058634" duration="1152000" />
+      <workItem from="1603092338077" duration="2051000" />
+      <workItem from="1603095150378" duration="1779000" />
+      <workItem from="1603098226863" duration="1632000" />
+      <workItem from="1603100042635" duration="1700000" />
+      <workItem from="1603102288180" duration="1779000" />
+      <workItem from="1603104107539" duration="1678000" />
+      <workItem from="1603105938870" duration="2071000" />
+      <workItem from="1603112758874" duration="1042000" />
+      <workItem from="1603191462068" duration="1221000" />
+      <workItem from="1603193425205" duration="1661000" />
+      <workItem from="1603195339271" duration="1705000" />
+      <workItem from="1603197199581" duration="1778000" />
+      <workItem from="1603199121753" duration="900000" />
+      <workItem from="1603340975964" duration="1707000" />
+      <workItem from="1603343045060" duration="1618000" />
+      <workItem from="1603345027325" duration="992000" />
+      <workItem from="1603349741303" duration="1679000" />
+      <workItem from="1603354548380" duration="1780000" />
+      <workItem from="1603358809288" duration="1780000" />
+      <workItem from="1603365061855" duration="1779000" />
+      <workItem from="1603366893854" duration="1728000" />
+      <workItem from="1603375680995" duration="127000" />
+      <workItem from="1603531179880" duration="1703000" />
+      <workItem from="1603606368946" duration="343000" />
+      <workItem from="1603608166021" duration="597000" />
+      <workItem from="1603621403190" duration="595000" />
+      <workItem from="1603789033069" duration="10000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36323000" />
+    <option name="totallyTimeSpent" value="274151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.124200426" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11513859" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -303,7 +484,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22860238" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -312,7 +493,7 @@
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17324094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17537314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -325,7 +506,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.13976164" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -337,339 +518,342 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/../drinkcan/resources/views/frontend/order-gkk.blade.php</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/../drinkcan/database/migrations/2020_10_13_051352_create_store_locations_table.php</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/Mail/specific-email-send.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Mail/conditional-user-mail-send.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/faqmanage.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
+        <state relative-caret-position="425">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CustomerMailSystem.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/homedemoedit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="60" column="57" selection-start-line="60" selection-start-column="57" selection-end-line="60" selection-end-column="57" />
+        <state relative-caret-position="-1139">
+          <caret line="20" column="67" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/inc/menubar.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/homedemomanage.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="87" column="68" selection-start-line="87" selection-start-column="68" selection-end-line="87" selection-end-column="68" />
+        <state relative-caret-position="-119">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/contact.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/userdatamanage.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/CompalinManage.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/CustomerMailSendingSystem.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/newsadd.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="116" selection-start-line="50" selection-start-column="52" selection-end-line="53" selection-end-column="116" />
+        <state relative-caret-position="476">
+          <caret line="94" column="82" selection-start-line="94" selection-start-column="82" selection-end-line="94" selection-end-column="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/userdataedit.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/newsedit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="67" column="84" selection-start-line="67" selection-start-column="84" selection-end-line="67" selection-end-column="84" />
+        <state relative-caret-position="561">
+          <caret line="96" column="84" selection-start-line="96" selection-start-column="84" selection-end-line="96" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/userdataadd.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/newsmanage.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="71" column="108" selection-start-line="71" selection-start-column="108" selection-end-line="71" selection-end-column="108" />
+        <state relative-caret-position="-306" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/portfolioedit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="105" column="84" selection-start-line="105" selection-start-column="84" selection-end-line="105" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../techhelpinfo/resources/views/UI/tutorialview.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/portfolioadd.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="748">
+          <caret line="104" column="82" selection-start-line="104" selection-start-column="78" selection-end-line="104" selection-end-column="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/support-view.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productaboutmanage.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+        <state relative-caret-position="221">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/support.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productaboutedit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="48" selection-start-line="48" selection-end-line="84" selection-end-column="18" />
+        <state relative-caret-position="272">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SupportController.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/portfoliomanage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productfeatureedit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsadd.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/ordermanage.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsbrand.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsbrandedit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsbrandview.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/pricelistmanage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="51" column="54" lean-forward="true" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsdiscoveradd.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsdiscoveredit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="59" column="84" selection-start-line="59" selection-start-column="84" selection-end-line="59" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsedit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="165" column="84" selection-start-line="165" selection-start-column="84" selection-end-line="165" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsmanage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsprimarycategory.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="59" column="90" selection-start-line="59" selection-start-column="90" selection-end-line="59" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsprimarycategoryedit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsdiscovermanage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productssecondarycategoryedit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/produtfeaturemanage.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="12" column="95" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="95" />
+          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogController.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/quicklinks.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="33" column="113" selection-start-line="29" selection-start-column="8" selection-end-line="33" selection-end-column="113" />
+        <state relative-caret-position="170">
+          <caret line="25" column="65" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/productsmain.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/quicklinksview.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/quicklinksedit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productssecondarycategoryview.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productssecondarycategory.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/productsprimarycategoryview.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/sociallinksview.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/sociallinksedit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-204" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/productsview.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/sociallinks.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+        <state relative-caret-position="-357" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/siteprofile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/order-edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1122" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/storelocationedit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="68" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/storelocationmanage.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        <state relative-caret-position="425">
+          <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/thananamemanage.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="59" />
+        <state relative-caret-position="425">
+          <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../hikvisionbd-laravel/resources/views/UI/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/thananameedit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../drinkcan/database/migrations/2020_10_13_051352_create_store_locations_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../hikvisionbd-laravel/resources/views/UI/inc/headersource.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../techhelpinfo/resources/views/Admin/inc/adminSideBar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="67" column="42" selection-start-line="65" selection-start-column="35" selection-end-line="67" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../hikvisionbd-laravel/resources/views/Admin/inc/adminSideBar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5015">
-          <caret line="295" selection-start-line="295" selection-end-line="295" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/inc/adminSideBar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3400">
-          <caret line="200" column="29" selection-start-line="200" selection-start-column="24" selection-end-line="200" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../hikvisionbd-laravel/app/ProductType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../hikvisionbd-laravel/app/Http/Controllers/ProductsController.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/database/migrations/2020_10_11_152658_create_thana_names_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="292" column="58" selection-start-line="292" selection-start-column="58" selection-end-line="292" selection-end-column="58" />
+        <state relative-caret-position="68">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/productsedit.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/frontend/storelocation.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071" />
+        <state relative-caret-position="-918" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../own-hikvisionbd/app/Http/Controllers/ProductsController.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/frontend/water-and-helth.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="844">
-          <caret line="214" column="5" selection-start-line="214" selection-start-column="5" selection-end-line="214" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="148" column="4" lean-forward="true" selection-start-line="148" selection-start-column="4" selection-end-line="214" selection-end-column="5" />
+        <state relative-caret-position="290">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
           <folding>
-            <element signature="e#5212#8739#0#PHP" />
-            <element signature="e#8895#13121#0#PHP" />
+            <element signature="n#style#0;n#h4#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../own-hikvisionbd/database/migrations/2020_04_06_062211_create_site_profiles_table.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="41" />
+        <state relative-caret-position="310">
+          <caret line="342" column="30" selection-start-line="342" selection-start-column="19" selection-end-line="342" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../own-hikvisionbd/resources/views/UI/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/inc/adminSideBar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+        <state relative-caret-position="409">
+          <caret line="306" column="29" selection-start-line="306" selection-start-column="29" selection-end-line="306" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../own-hikvisionbd/resources/views/UI/success-history.blade.php">
+    <entry file="file://$PROJECT_DIR$/../drinkcan/public/frontend/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-788">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../own-hikvisionbd/resources/views/UI/career.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="156" selection-start-line="7" selection-start-column="156" selection-end-line="7" selection-end-column="156" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../own-hikvisionbd/resources/views/UI/about.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/about.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="144" column="4" selection-start-line="144" selection-start-column="4" selection-end-line="144" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../drinkcan/app/ProductsSecondaryCategory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../drinkcan/app/ProductsPrimaryCategory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../drinkcan/app/Products.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../drinkcan/app/Http/Controllers/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="573" column="23" selection-start-line="573" selection-start-column="23" selection-end-line="573" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/inc/footersource.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/UI/inc/headersource.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/inc/header source.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="107" lean-forward="true" selection-start-line="6" selection-start-column="107" selection-end-line="6" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../drinkcan/public/frontend/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="196" column="26" lean-forward="true" selection-start-line="196" selection-start-column="26" selection-end-line="196" selection-end-column="26" />
+        <state relative-caret-position="211">
+          <caret line="293" column="14" lean-forward="true" selection-start-line="293" selection-start-column="14" selection-end-line="293" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/frontend/inc/menubar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/frontend/inc/headersource.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/frontend/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1632">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../drinkcan/app/Http/Controllers/SiteProfileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../drinkcan/resources/views/Admin/siteprofile.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SiteProfileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../hikvisionbd-laravel/app/Http/Controllers/SiteProfileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../own-hikvisionbd/app/Http/Controllers/SiteProfileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../techhelpinfo/app/Http/Controllers/SiteProfileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        <state relative-caret-position="170">
+          <caret line="58" selection-start-line="58" selection-end-line="105" selection-end-column="22" />
         </state>
       </provider>
     </entry>
