@@ -4,7 +4,7 @@
 
     <!-- Navbar -->
 @include('Admin.inc.adminHeader')
-<!-- /.navbar -->
+    <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
 @include('Admin.inc.adminSideBar')
@@ -107,6 +107,7 @@
                                         </select>
                                     </div>
 
+
                                     <div class="form-group col-6 col-lg-4">
                                         <label style="margin-bottom: 0px;" for="TakeCare">Take Care</label>
                                         <select id="TakeCare" class="form-control" name="TakeCare">
@@ -116,15 +117,30 @@
                                             @endforeach
                                         </select>
                                     </div>
+
+
                                     <div class="form-group col-6 col-lg-4">
                                         <label style="margin-bottom: 0px;" for="Designation">Designation</label>
                                         @if($errors->has('Designation'))<small style="color:red;font-weight: bold;">{{$errors->first('Designation')}}</small>@endif
-                                        <input type="text" class="form-control" value="{{old('Designation')}}" placeholder="Enter User Designation" id="Designation" name="Designation" >
+                                        <input type="text" class="form-control" value="{{$UserData->Designation}}" placeholder="Enter User Designation" id="Designation" name="Designation" >
                                     </div>
+
+
                                     <div class="form-group col-6 col-lg-4">
                                         <label style="margin-bottom: 0px;" for="Website">Website</label>
                                         @if($errors->has('Website'))<small style="color:red;font-weight: bold;">{{$errors->first('Website')}}</small>@endif
-                                        <input type="text" class="form-control" value="{{old('Website')}}" placeholder="Enter Website Name" id="Website" name="Website" >
+                                        <input type="text" class="form-control" value="{{$UserData->Website}}" placeholder="Enter Website Name" id="Website" name="Website" >
+                                    </div>
+
+
+                                    <div class="form-group col-6 col-lg-4">
+                                        <label style="margin-bottom: 0px;" for="partner">Partner</label>
+                                        @if($errors->has('partner'))<small style="color:red;font-weight: bold;">{{$errors->first('partner')}}</small>@endif
+                                        <select id="partner" class="form-control" name="partner">
+                                            <option selected disabled>SELECT Partner TYPE</option>/
+                                            <option value="no" {{$UserData->partner == 'no' ? 'selected="selected"' : ''}} >NO</option>/
+                                            <option value="yes" {{$UserData->partner == 'yes' ? 'selected="selected"' : ''}} >YES</option>
+                                        </select>
                                     </div>
                                 </div>
 

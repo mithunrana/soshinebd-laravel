@@ -31,7 +31,7 @@ class CreateUsersTable extends Migration
             $table->text('image')->nullable();
             $table->date('BirthDate')->nullable();
             $table->date('EmployeeStatus')->default('NO');
-            $table->date('TakeCare')->default(0);
+            $table->date('TakeCare')->default(null);
             $table->date('Designation')->nullable();
             $table->text('Website')->nullable();
             $table->string('activestatus')->default('EndUserNotActive');

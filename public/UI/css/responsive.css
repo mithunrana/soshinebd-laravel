@@ -7,11 +7,6 @@
 }
 
 @media all and (max-width: 1450px) {
-
-    .showcase .carousel-item {
-        height: 68vh;
-    }
-
     .search-item {
         left: 67%;
         width: 30% !important;
@@ -38,10 +33,11 @@
 
     .mega-corporate {
         left: 74%;
-
     }
 
 }
+
+
 
 
 @media all and (max-width: 1200px) {
@@ -73,17 +69,9 @@
     .logo {
         width: 180px;
     }
-        .showcase .carousel-item {
-        height: 56vh;
-    }
 }
 
 @media all and (max-width: 1080px) {
-
-    .showcase .carousel-item {
-        height: 51vh;
-    }
-
     .news-events-box {
         height: 150px;
     }
@@ -95,16 +83,14 @@
 }
 
 
+
+
 @media all and (max-width: 992px) {
     .product-category {
         height: 0;
         opacity: 0;
 
     }
-    .showcase .carousel-item {
-        height: 47vh;
-    }
-
     .cat-btn {
         display: block;
     }
@@ -113,6 +99,8 @@
         padding-right: 15px;
     }
 }
+
+
 
 @media all and (max-width: 768px) {
     .login-main-form {
@@ -151,9 +139,6 @@
         margin-top: 5px;
     }
 
-    .showcase .carousel-item {
-        height: 36vh;
-    }
 
     .our-certification-area {
         margin-bottom: 20px;
@@ -175,23 +160,16 @@
 
 }
 
-@media all and (max-width: 576px) {
 
+
+@media all and (max-width: 576px) {
     .dp-img img {
         width: 100%;
     }
-    .showcase .carousel-item {
-        height: 27vh;
-    }
-
 }
 
 
 @media all and (max-width: 400px) {
-    .showcase .carousel-item {
-        height: 17vh;
-    }
-
     .fm {
         width: 50% !important;
         text-align: center;

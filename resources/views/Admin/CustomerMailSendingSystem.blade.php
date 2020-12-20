@@ -76,7 +76,11 @@
                                                 <input style="border: 1px solid #586bde;" type="text" name="MailSubject" placeholder="Enter Mail Subject" class="form-control{{$errors->has('MailSubject') ? ' is-invalid' : ''}}" value="{{old('MailSubject')}}" id="MailSubject">
                                             </div>
                                             <div class="form-group col-sm-12">
-                                                <label for="MailDetails">Mail Details:</label>
+                                                <label for="MailDetails">Mail Details:
+                                                    @if($errors->has('MailDetails'))
+                                                        <small style="color:red;"> {{$errors->first('MailDetails')}}</small>
+                                                    @endif
+                                                </label>
                                                 <textarea style="border: 1px solid #586bde;" type="text" class="form-control{{$errors->has('MailDetails') ? ' is-invalid' : ''}}"  rows="7" placeholder="Enter Mail Details" name="MailDetails" id="MailDetails">{{old('MailDetails')}}</textarea>
                                             </div>
                                         </div>

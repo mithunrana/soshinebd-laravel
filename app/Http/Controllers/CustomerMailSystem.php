@@ -49,6 +49,7 @@ class CustomerMailSystem extends Controller
         $customertype = request('customertype');
         $servicetype = request('servicetype');
         $activestatus = request('activestatus');
+        $tomail = "info@soshinebd.com";
         if ($customertype || $servicetype || $activestatus ) {
             $emails = User::where('customertype',$customertype)
                 ->Where('servicetype', $servicetype)
@@ -57,7 +58,7 @@ class CustomerMailSystem extends Controller
         else {
             $emails = User::get()->toArray();
         }
-        Mail::to($emails)->send(new CustomerMailSend($MailDetails,$MailSubject));
+        Mail::bcc($emails)->send(new CustomerMailSend($MailDetails,$MailSubject));
         Session::flash("success");
         return redirect()->to('admin/customer-mail-send');
     }

@@ -7,11 +7,11 @@
                     <div class="ht-contact">
                         <ul class="ht-ul">
                             <li><a href="javascript:;">Cell: {{$SiteProfile->CorporatePhone}}</a></li>
-                            <li class="country-btn">
+                            <!--<li class="country-btn">
                                 <a href="javascript:;">
                                     <img width="30" src="{{asset('')}}UI/images/bangladesh.jpg"> Bangladesh <i class="fa fa-caret-down"></i>
                                 </a>
-                            </li>
+                            </li>-->
                             @if(!Auth::check())
                             <li><a style="color: #fff;display: inline-block;" href="{{asset('')}}register">Signup</a></li>
                             <li><a style="color: #fff;display: inline-block;" href="{{asset('')}}login">Login</a></li>
@@ -34,7 +34,7 @@
     <nav class="navbar wow fadeInDown" data-wow-duration="1s">
         <div class="container">
             <a class="navbar-brand" href="{{asset('')}}">
-                <img style="max-width: 100px;" src="{{asset('')}}{{$SiteProfile->logo->imageurl}}" class="logo" title="{{$SiteProfile->MainLogoTitleText}}" alt="{{$SiteProfile->MainLogoAltText}}">
+                <img style="max-width: 93px;height: 33px;" src="{{asset('')}}{{$SiteProfile->logo->imageurl}}" class="logo" title="{{$SiteProfile->MainLogoTitleText}}" alt="{{$SiteProfile->MainLogoAltText}}">
             </a>
             <div class="main-nav ml-auto">
                 <ul class="nav-ul">
@@ -126,11 +126,14 @@
 </header>
 <!--end header-->
 
+
+
+
 <!--start mobile menu-->
 <div style="overflow-y:scroll;" class="mobile-menu">
     <div class="mm-logo" style="background: #fff;padding: 15px;">
         <a style="text-align:center;margin-bottom: 0px;color:white;" >
-            <img style="max-width: 70%;" src="{{asset('')}}{{$SiteProfile->logo->imageurl}}">
+            <img style="max-width: 70%;height:30px;" src="{{asset('')}}{{$SiteProfile->logo->imageurl}}">
         </a>
         <div style="margin:-9px 0px;" class="menu-icon">
             <span></span>

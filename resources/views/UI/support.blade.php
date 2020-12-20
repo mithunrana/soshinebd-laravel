@@ -52,8 +52,8 @@
                     <ul style="width: 100%;" class="list-group">
                         @foreach(\App\SoftwareList::orderBy('id','DESC')->where('ActiveStatus',1)->get() as $Software)
                         <li class="list-group-item">
-                            <a target="_blank" style="color: #337ab7;text-decoration: none;font-weight: bold;" href="{{$Software->DownloadLink}}" >{{$Software->SoftwareName}}</a>
-                            <a style="float: right;color:white;" class="btn btn-danger" href="{{$Software->DownloadLink}}" download>Download</a>
+                            <a style="color: #337ab7;text-decoration: none;font-weight: bold;" href="{{asset('')}}{{$Software->DownloadLink}}" download>{{$Software->SoftwareName}}</a>
+                            <a style="float: right;color:white;" class="btn btn-danger" href="{{asset('')}}{{$Software->DownloadLink}}" download>Download</a>
                         </li>
                         @endforeach
                     </ul>

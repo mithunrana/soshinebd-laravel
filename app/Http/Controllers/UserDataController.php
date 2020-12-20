@@ -237,6 +237,8 @@ class UserDataController extends Controller
                 'phone' => 'required|min:5|max:255',
                 'email' => 'required|unique:users,email',
                 'customertype' => 'required',
+                'activestatus' => 'required',
+                'servicetype' => 'required',
                 'country' => 'required|max:255',
                 'address' => 'required|min:10',
             ]);
@@ -251,6 +253,11 @@ class UserDataController extends Controller
             'country' => $request->country,
             'activestatus' => $request->activestatus,
             'address' => $request->address,
+            'BirthDate' => $request->BirthDate,
+            'EmployeeStatus' => $request->EmployeeStatus,
+            'TakeCare' => $request->TakeCare,
+            'Designation' => $request->Designation,
+            'Website' => $request->Website,
             'partner' => $request->partner,
         ]);
 
@@ -264,6 +271,20 @@ class UserDataController extends Controller
 
 
     public function userDataUpdate($id,Request $request){
+
+        $this->validate($request,[
+            'name' => 'required|min:3',
+            'phone' => 'required|min:5|max:255',
+            'email' => "required|unique:users,email,$id",
+            'partner' => 'required',
+            'customertype' => 'required',
+            'EmployeeStatus' => 'required',
+            'activestatus' => 'required',
+            'servicetype' => 'required',
+            'country' => 'required|max:255',
+            'address' => 'required|min:10',
+        ]);
+
         $User = User::findOrFail($id);
         $User->name = request('name');
         $User->email= request('email');
@@ -274,6 +295,11 @@ class UserDataController extends Controller
         $User->country = request('country');
         $User->activestatus = request('activestatus');
         $User->address = request('address');
+        $User->BirthDate = request('BirthDate');
+        $User->EmployeeStatus = request('EmployeeStatus');
+        $User->TakeCare = request('TakeCare');
+        $User->Designation = request('Designation');
+        $User->Website = request('Website');
         $User->partner = request('partner');
         $User->save();
         return redirect()->to('admin/userdata-manage')->with('message','User Update Successfully');
