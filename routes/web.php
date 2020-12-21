@@ -231,6 +231,7 @@ Route::get('admin/authorised-delete/{id}','AuthorizationController@delete')->mid
 Route::get('admin/authorised-active-deactive/{status}/{postid}','AuthorizationController@activeDeactive')->middleware('AdminUser');
 
 Route::get('admin/userdata-manage','UserDataController@userDataManage')->middleware('AdminUser');
+Route::get('admin/techregister-userdata','UserDataController@techRegisterUser')->middleware('AdminUser');
 Route::get('admin/userdata-add','UserDataController@userDataAdd')->middleware('AdminUser');
 Route::post('admin/userdata-add','UserDataController@userDataStore')->middleware('AdminUser');
 Route::get('admin/userdata-edit/{id}','UserDataController@userDataEdit')->middleware('AdminUser');

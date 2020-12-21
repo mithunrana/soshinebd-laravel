@@ -38,13 +38,14 @@
                         <!-- small box -->
                         <div class="small-box bg-info">
                             <div class="inner">
-                                <h3>150</h3>
-                                <p>New Orders</p>
+                                <h3>Products</h3>
+                                <h4 style="color:white"> @php $Total =  \App\Products::get();$active = \App\Products::Where('ActiveStatus','1')->get();$Deactive = \App\Products::Where('ActiveStatus','0')->get(); echo 'Total: '.count($Total); echo ' Active: '.count($active); @endphp </h4>
+                                <h4 style="color:#001c4e">{{ 'Inactive: '.count($Deactive)}}</h4>
                             </div>
                             <div class="icon">
                                 <i class="ion ion-bag"></i>
                             </div>
-                            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{asset('')}}admin/products-manage" class="small-box-footer">Manage<i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -52,14 +53,14 @@
                         <!-- small box -->
                         <div class="small-box bg-success">
                             <div class="inner">
-                                <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                                <p>Bounce Rate</p>
+                                <h3>Solution</h3>
+                                <h4 style="color:white"> @php $Total =  \App\Solutions::get();$active = \App\Solutions::Where('ActiveStatus','1')->get();$Deactive = \App\Solutions::Where('ActiveStatus','0')->get(); echo 'Total: '.count($Total); echo ' Active: '.count($active); @endphp </h4>
+                                <h4 style="color:#001c4e">{{ 'Inactive: '.count($Deactive)}}</h4>
                             </div>
                             <div class="icon">
                                 <i class="ion ion-stats-bars"></i>
                             </div>
-                            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{asset('')}}admin/solutions-manage" class="small-box-footer">Manage<i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -67,14 +68,14 @@
                         <!-- small box -->
                         <div class="small-box bg-warning">
                             <div class="inner">
-                                <h3>44</h3>
-
-                                <p>User Registrations</p>
+                                <h3>User</h3>
+                                <h4 style="color:white"> @php $Total =  \App\User::get();$Admin = \App\User::Where('activestatus','TechHelpInfoAdmin')->get();  $TechRegister = \App\User::Where('activestatus','TechRegister')->get();    echo 'Total: '.count($Total); echo ' Admin: '.count($Admin); @endphp </h4>
+                                <h4 style="color:#001c4e">{{ 'Tech Register: '.count($TechRegister)}}</h4>
                             </div>
                             <div class="icon">
                                 <i class="ion ion-person-add"></i>
                             </div>
-                            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{asset('')}}admin/userdata-manage" class="small-box-footer">Manage<i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -82,14 +83,14 @@
                         <!-- small box -->
                         <div class="small-box bg-danger">
                             <div class="inner">
-                                <h3>65</h3>
-
-                                <p>Unique Visitors</p>
+                                <h3>Video</h3>
+                                <h4 style="color:white"> @php $Total =  \App\BlogTutorial::get();$active = \App\BlogTutorial::Where('ActiveStatus','1')->get();$Deactive = \App\BlogTutorial::Where('ActiveStatus','0')->get(); echo 'Total: '.count($Total); echo ' Active: '.count($active); @endphp </h4>
+                                <h4 style="color:#001c4e">{{ 'Inactive: '.count($Deactive)}}</h4>
                             </div>
                             <div class="icon">
                                 <i class="ion ion-pie-graph"></i>
                             </div>
-                            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{asset('')}}admin/blog-manage" class="small-box-footer">Manage<i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->

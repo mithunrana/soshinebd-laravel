@@ -68,23 +68,40 @@ class ForgotPasswordController extends Controller
     }
 
 
+
+
+
     public function forgetTokenVerificationCheck(Request $request){
         $Result = User::where('email',$request->email)->where('VerifyCode',$request->VerifyCode)->first();
         if($Result==null){
             return redirect()->to('password/forget-token-checker')->with(array('message'=>'Email With Verification Code Does Not Match','Email'=>$request->email));
         }else{
             $Profile = User::findOrFail($Result->id);
-            $Profile->activestatus = "EndUserActive";
-            $Profile->save();
+            if($Profile->activestatus == "TechHelpInfoAdmin"){
+                $Profile->activestatus = "TechHelpInfoAdmin";
+                $Profile->save();
+            }elseif($Profile->activestatus == "TechHelpInfoSiteEditor"){
+                $Profile->activestatus = "TechHelpInfoSiteEditor";
+                $Profile->save();
+            }else{
+                $Profile->activestatus = "EndUserActive";
+                $Profile->save();
+            }
             $request->session()->put('passwordchange',$request->email);
             return redirect()->to('password/new-password-set')->with(array('message'=>'Verification Code Successfully Match Set New Password'));
         }
     }
 
+
+
+
     public function userNewPassword(){
         $SiteProfile = SiteProfile::first();
         return view('auth.newpasswordset',compact('SiteProfile'));
     }
+
+
+
 
     public function userNewPasswordSet(Request $request){
 
@@ -93,7 +110,6 @@ class ForgotPasswordController extends Controller
         ]);
 
         if (Session::has('passwordchange')){
-            echo $request->password;
             $User = User::where('email',Session::get('passwordchange'))->first();
             $User->password = Hash::make($request->password);
             $User->save();

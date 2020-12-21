@@ -23,7 +23,7 @@ class PriceListController extends Controller
     public function store(Request $request){
         $this->validate($request,[
             'PriceListName' => 'required',
-            'file' => 'required|mimes:pdf|max:10240',
+            'file' => 'required|mimes:pdf|max:20480',
         ]);
         $PriceList = new  PriceList();
         $file = $request->file('file');

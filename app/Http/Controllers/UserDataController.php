@@ -309,6 +309,10 @@ class UserDataController extends Controller
         return view('Admin.userdatamanage');
     }
 
+    public function techRegisterUser(){
+        return view('Admin.userdataselfregister');
+    }
+
     public function userDataDelete($id){
         $Blog = User::find($id);
         $Blog->delete();

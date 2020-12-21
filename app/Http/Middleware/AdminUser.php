@@ -18,14 +18,14 @@ class AdminUser
         if (!Auth::check()) {
             return redirect('login');
         }
-
         elseif(Auth::check()){
-            if(Auth::user()->activestatus =='TechHelpInfoEditor'){
-                return redirect('user-panel');
-            }elseif(Auth::user()->activestatus =='EndUserActive'){
+            if(Auth::user()->activestatus =='TechHelpInfoAdmin'){
+                return $next($request);
+            }elseif(Auth::user()->activestatus =='EndUserNotActive'){
+                return redirect('verify');
+            }else{
                 return redirect('user-panel');
             }
         }
-        return $next($request);
     }
 }

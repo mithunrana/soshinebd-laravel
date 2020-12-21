@@ -53,7 +53,6 @@
                             <div class="input-group-prepend">
                                 <button type="button" class="btn btn-danger"><i class="fa fa-envelope"></i></button>
                             </div>
-
                         </div>
                     </form>
                     <div class="follow-us mt-4">

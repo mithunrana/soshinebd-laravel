@@ -4,11 +4,11 @@
 
     <!-- Navbar -->
 @include('Admin.inc.adminHeader')
-    <!-- /.navbar -->
+<!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
 @include('Admin.inc.adminSideBar')
-    <!-- Main Sidebar Container -->
+<!-- Main Sidebar Container -->
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -16,16 +16,10 @@
         <section id="app" style="margin-top: 10px" class="content">
             <div class="row">
                 <div class="col-sm-12">
-                    @if(Session::has('message'))
-                        <div class="alert alert-success alert-dismissible">
-                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                            {{Session::get('message')}}
-                        </div>
-                    @endif
                     <div class="card">
                         <div class="card-header">
                             <a class="btn btn-success" href="{{url('admin/userdata-add')}}">Add New +</a>
-                            <a class="btn btn-info" href="{{url('admin/techregister-userdata')}}">Tech Register User</a>
+                            <a class="btn btn-info" href="{{url('admin/userdata-manage')}}">Self Register User</a>
                         </div>
                         <div class="card-body">
                             <table id="mytable" class="table table-striped">
@@ -39,8 +33,8 @@
                                     <th scope="col">Action</th>
                                 </tr>
                                 </thead>
-                                @foreach(App\User::where('activestatus','!=','TechRegister')->get() as $User)
                                 <tbody>
+                                @foreach(App\User::where('activestatus','=','TechRegister')->get() as $User)
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
                                         <td>{{$User->name}}</td>
@@ -48,13 +42,19 @@
                                         <td>{{$User->username}}</td>
                                         <td>{{$User->companyname}}</td>
                                         <td>
-                                            <a href="{{asset('')}}news/}}" target="_blank" class="btn btn-success"><i style="font-size:17px;" class="fa fa-eye"></i></a>
-                                            <a href="{{url('admin/userdata-edit',[$User->id])}}" class="btn btn-info"> <i style="font-size:17px;" class="fa fa-edit"></i></a>
-                                            <a href="{{url('admin/userdata-delete',[$User->id])}}" class="btn btn-danger" onclick="return ConfirmDelete();" ><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                            <a href="{{asset('')}}news/}}" target="_blank" class="btn btn-success">
+                                                <i style="font-size:17px;" class="fa fa-eye"></i>
+                                            </a>
+                                            <a href="{{url('admin/userdata-edit',[$User->id])}}" class="btn btn-info">
+                                                <i style="font-size:17px;" class="fa fa-edit"></i>
+                                            </a>
+                                            <a href="{{url('admin/userdata-delete',[$User->id])}}" class="btn btn-danger" onclick="return ConfirmDelete();" >
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                            </a>
                                         </td>
                                     </tr>
-                                </tbody>
                                 @endforeach
+                                </tbody>
                             </table>
                         </div>
                     </div>
