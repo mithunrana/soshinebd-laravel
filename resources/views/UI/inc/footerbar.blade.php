@@ -14,7 +14,11 @@
                         <p class="footer-item-title">Solution</p>
                         <ul>
                             @foreach(App\Solutions::orderBy('id','DESC')->Where('ActiveStatus',1)->get() as $Solution)
-                            <li><a href="{{asset('')}}solutions/{{$Solution->Permalink}}">{{$Solution->SolutionsName}}</a></li>
+                                @if($Solution->Permalink=="#")
+                                    <li><a href="{{asset('')}}solutions">{{$Solution->SolutionsName}}</a></li>
+                                @else
+                                    <li><a href="{{asset('')}}solutions/{{$Solution->Permalink}}">{{$Solution->SolutionsName}}</a></li>
+                                @endif
                             @endforeach
                         </ul>
                     </div>
@@ -82,7 +86,7 @@
                     <div class="main-copy">
                         <p style="margin-bottom: 5px;">{{$SiteProfile->CopyRightText}}</p>
                         <a href="#">Legal</a> |
-                        <a href="#">Privacy Policy</a>
+                        <a href="{{asset('')}}privacy-policy">Privacy Policy</a>
                     </div>
                 </div>
                 <div class="col-md-6">

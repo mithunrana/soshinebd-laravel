@@ -24,7 +24,7 @@
                         <a href="{{asset('')}}">Home</a>
                     </li>
                     <li class="breadcrumb-item active">
-                        <a href="{{asset('')}}portfolio">success history</a>
+                        <a href="{{asset('')}}portfolio">Success History</a>
                     </li>
                     <li class="breadcrumb-item active">{{$Portfolio->ProjectName}}</li>
                 </ol>

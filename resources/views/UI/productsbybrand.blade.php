@@ -4,9 +4,9 @@
 
 
 @php
-    $title = $Brand->CategoryBrowserTitle;
-    $keywords =  $Brand->CategorySeoKeyword;
-    $description = $Brand->CategorySeoDescription;
+    $title = $Brand->BrandBrowserTitle;
+    $keywords =  $Brand->BrandSeoKeyword;
+    $description = $Brand->BrandSeoDescription;
 @endphp
 
 @include('UI.inc.headersource')
@@ -23,7 +23,7 @@
             <div class="col">
                 <div class="sh-header-img">
                     <h3 class="mb-4" style="color: #555;">{{$Brand->SeoHeading}}</h3>
-                    <p style="color: #555;">{!! html_entity_decode($Brand->CategoryDetails) !!}</p>
+                    <p style="color: #555;">{!! html_entity_decode($Brand->BrandDetails) !!}</p>
                 </div>
             </div>
         </div>
@@ -55,8 +55,6 @@
             </div>
             <div class="col-lg-9 mt-lg-0 mt-4">
                 <div class="main-product-right card">
-                    <h4 style="margin-bottom: 0px;" class="proname">Product name</h4>
-
                     @if(isset($MegaPixel))
                         <div class="row">
                             @foreach($MegaPixel as $Pixel)

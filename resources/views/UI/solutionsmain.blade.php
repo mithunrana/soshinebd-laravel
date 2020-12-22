@@ -53,21 +53,26 @@
     <div class="container">
         <div class="row">
             @foreach(\App\Solutions::orderBy('id','DESC')->where('ActiveStatus',1)->skip(0)->take(9)->get() as $Solution)
-            <div class="col-lg-4 col-md-6 wow fadeInDown" data-wow-duration="1s">
-                <div style="border-radius: 0;" class="sh-box sh-solution">
-                    <div class="sh-img sh-img-solution">
-                        <a href="{{asset('')}}solutions/{{$Solution->Permalink}}">
-                            <img src="{{asset('')}}{{$Solution->featuredimage1->imageurl}}" class="img-fluid" alt="{{$Solution->ImageAltText}}">
-                        </a>
-                        <h5 style="margin-top: 5px;margin-left: 5px;" class="text-custom">
-                            <a style="color:#d30411" href="{{asset('')}}solutions/{{$Solution->Permalink}}">{{$Solution->SolutionsName}}</a>
-                        </h5>
-                    </div>
-                    <div class="sh-txt sh-txt-solution">
-                        <a style="color:#d30411" href="{{asset('')}}solutions/{{$Solution->Permalink}}">Learn More →</a>
+                <div class="col-lg-4 col-md-6 wow fadeInDown" data-wow-duration="1s">
+                    <div style="border-radius: 0;" class="sh-box sh-solution">
+                        <div class="sh-img sh-img-solution">
+                            @if($Solution->Permalink=="#")
+                                <a href="{{asset('')}}solutions">
+                                    @else
+                                        <a href="{{asset('')}}solutions/{{$Solution->Permalink}}">
+                                            @endif
+                                            <img src="{{asset('')}}{{$Solution->featuredimage1->imageurl}}" class="img-fluid" alt="{{$Solution->ImageAltText}}">
+                                        </a>
+                                        <h5 style="margin-top: 5px;margin-left: 5px;" class="text-custom">
+                                            @if($Solution->Permalink=="#")
+                                                <a style="color:#d30411" href="{{asset('')}}solutions">
+                                                    @else
+                                                <a style="color:#d30411" href="{{asset('')}}solutions/{{$Solution->Permalink}}">
+                                                @endif{{$Solution->SolutionsName}}</a>
+                                        </h5>
+                        </div>
                     </div>
                 </div>
-            </div>
             @endforeach
         </div>
     </div>

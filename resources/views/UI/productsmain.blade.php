@@ -38,8 +38,6 @@
             </div>
             <div class="col-lg-9 mt-lg-0 mt-4">
                 <div class="main-product-right card">
-                    <h4 style="margin-bottom: 11px;" class="proname">Product name</h4>
-
                     @if(isset($MegaPixel))
                     <div class="row">
                         @foreach($MegaPixel as $Pixel)

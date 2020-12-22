@@ -61,15 +61,16 @@
             <div class="col-md-4 wow fadeInDown" data-wow-duration="1s">
                 <div style="border-radius: 0;" class="sh-box">
                     <div class="sh-img">
-                        <a href="{{asset('')}}portfolio/{{$Portfolio->Permalink}}">
+                        @if($Portfolio->Permalink=="#")
+                           <a href="{{asset('')}}portfolio">
+                        @else
+                           <a href="{{asset('')}}portfolio/{{$Portfolio->Permalink}}">
+                        @endif
                             <img src="{{asset('')}}{{$Portfolio->featuredimage1->imageurl}}" class="img-fluid" alt="{{$Portfolio->ImageAltText}}">
                             <h4 class="text-custom">
                                 {{$Portfolio->ProjectName}}
                             </h4>
                         </a>
-                    </div>
-                    <div class="sh-txt">
-                        <a style="color:#d30411" href="{{asset('')}}portfolio/{{$Portfolio->Permalink}}">Learn More →</a>
                     </div>
                 </div>
             </div>

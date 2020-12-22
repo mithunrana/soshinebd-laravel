@@ -44,4 +44,9 @@ class HomeUIController extends Controller
     }
 
 
+    public function privacyPolicy(){
+        return view('UI.privacy-policy');
+    }
+
+
 }
