@@ -132,6 +132,7 @@ $SiteProfile = App\SiteProfile::first();
             </div>-->
 
 
+
                 @foreach(\App\Products::orderBy('id','DESC')->where('ActiveStatus',1)->skip(0)->take(8)->get() as $Products)
                     <div style="margin-top: 10px;" class="col-md-4 col-sm-6 col-lg-3 col-12">
                         <div class="product-box">
@@ -148,21 +149,30 @@ $SiteProfile = App\SiteProfile::first();
                                     <a style="margin-bottom: 0px;" href="{{asset('')}}{{$Products->Permalink}}">{{$Products->Name}}</a>
                                 </p>
                             </div>
-                            <div class="p-compare">
-                                <div class="form-check">
-                                    <label class="fomr-chck-label" for="check">
-                                        <input id="check" id="p-check" class="form-check-input" type="checkbox">
-                                        Add to Compare
-                                    </label>
+
+                            @if($Products->PriceStatus=='0')
+                                @if(Auth::check() && Auth::user()->partner=='yes')
+                                    <div class="p-compare">
+                                        {{$Products->CurrentPrice}}
+                                    </div>
+                                @else
+                                    <div class="p-compare">
+                                        Call For Price
+                                    </div>
+                                @endif
+                            @else
+                                <div class="p-compare">
+                                    {{$Products->CurrentPrice}}৳
                                 </div>
-                            </div>
+                            @endif
+
                             <div class="plus-arrow">
                                 <a href="#THI{{$Products->Model}}" data-toggle="modal">
                                     <img src="{{asset('')}}UI/img/plus.png" alt="">
                                 </a>
                             </div>
                             <div class="back-arrow">
-                                <a href="#">
+                                <a href="{{asset('')}}{{$Products->Permalink}}">
                                     <img src="{{asset('')}}UI/img/arrow-black.png" alt="">
                                 </a>
                             </div>

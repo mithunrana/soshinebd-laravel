@@ -355,7 +355,15 @@ class ProductsController extends Controller
 
 
 
-
+    public function dataSheetRemove($productId){
+        $Product = Products::findOrFail($productId);
+        if(File::exists($Product->Datasheet)){
+            unlink($Product->Datasheet);
+        }
+        $Product->Datasheet = '#';
+        $Product->save();
+        return redirect()->to('admin/products-manage')->with('message','Product Datasheet Remove Successfully');
+    }
 
 
 

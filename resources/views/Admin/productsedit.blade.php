@@ -158,6 +158,11 @@
                                             <label for="CurrentPrice">Partner Price :</label>
                                             <input style="border: 1px solid #586bde;" type="text" name="PartnerPrice" placeholder="Enter Current Price" class="form-control{{$errors->has('PartnerPrice') ? ' is-invalid' : ''}}" value="{{$Products->PartnerPrice}}" id="PartnerPrice">
                                         </div>
+                                        <div style="margin-top: 10px;" class="form-group">
+                                            @if($Products->Datasheet !='#')
+                                                <a style="width: 100%;" class="btn btn-danger" href="{{url('admin/products-datasheet-remove',[$Products->id])}}">Remove Datasheet</a>
+                                            @endif
+                                        </div>
                                     </div>
 
                                     <input type="hidden" name="FeaturedImage" id="setimageid" value="{{$Products->FeaturedImage}}">

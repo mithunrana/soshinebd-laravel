@@ -65,21 +65,28 @@
                                         <a style="margin-bottom: 0px;" href="{{asset('')}}{{$SingleProduct->Permalink}}">{{$SingleProduct->Name}}</a>
                                     </p>
                                 </div>
-                                <div class="p-compare">
-                                    <div class="form-check">
-                                        <label class="fomr-chck-label" for="check">
-                                            <input id="check" id="p-check" class="form-check-input" type="checkbox">
-                                            Add to Compare
-                                        </label>
+                                @if($SingleProduct->PriceStatus=='0')
+                                    @if(Auth::check() && Auth::user()->partner=='yes')
+                                        <div class="p-compare">
+                                            {{$SingleProduct->CurrentPrice}}
+                                        </div>
+                                    @else
+                                        <div class="p-compare">
+                                            Call For Price
+                                        </div>
+                                    @endif
+                                @else
+                                    <div class="p-compare">
+                                        {{$SingleProduct->CurrentPrice}}৳
                                     </div>
-                                </div>
+                                @endif
                                 <div class="plus-arrow">
                                     <a href="#THI{{$SingleProduct->id}}" data-toggle="modal">
                                         <img src="{{asset('')}}UI/img/plus.png" alt="">
                                     </a>
                                 </div>
                                 <div class="back-arrow">
-                                    <a href="#">
+                                    <a href="{{asset('')}}{{$SingleProduct->Permalink}}">
                                         <img src="{{asset('')}}UI/img/arrow-black.png" alt="">
                                     </a>
                                 </div>

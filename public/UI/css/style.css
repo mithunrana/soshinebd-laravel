@@ -533,6 +533,9 @@ nav {
 .p-compare {
     border-top: 1px solid #ddd;
     padding: 13px;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
 }
 
 .p-compare label {

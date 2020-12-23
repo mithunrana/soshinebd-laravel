@@ -219,7 +219,7 @@ Route::post('admin/products-update/{id}','ProductsController@update')->middlewar
 Route::get('admin/products-delete/{id}','ProductsController@delete')->middleware('AdminUser');
 Route::get('admin/products-active-deactive/{status}/{postid}','ProductsController@activeDeactive')->middleware('AdminUser');
 Route::get('admin/products-price-active-deactive/{status}/{postid}','ProductsController@priceActiveDeactive')->middleware('AdminUser');
-
+Route::get('admin/products-datasheet-remove/{id}','ProductsController@dataSheetRemove')->middleware('AdminUser');
 
 
 Route::get('admin/authorised-manage','AuthorizationController@manage')->middleware('AdminUser');

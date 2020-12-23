@@ -55,7 +55,6 @@
                     <li class="mega-dd-btn"><a href="{{asset('')}}solutions">Solutions </a></li>
                     <li class="mega-dd-btn"><a target="_blank" href="https://www.avtech.com.tw/pro_wf_ygn2003pt.aspx">Doll Camera</a></li>
                     <li class="mega-dd-btn"><a href="{{asset('')}}avtech-support-bangladesh">Support </a>
-                    <li class="mega-dd-btn"><a href="{{asset('')}}news">News </a></li>
                     <li class="mega-dd-btn">
                         <a href="{{asset('')}}contact">Contact </a>
                     </li>
@@ -170,7 +169,14 @@
                     <div class="card-body">
                         <ul>
                             @foreach(App\Solutions::orderBy('id','DESC')->Where('ActiveStatus',1)->get() as $Solution)
-                                <li><a href="{{asset('')}}solutions/{{$Solution->Permalink}}">{{$Solution->SolutionsName}}</a></li>
+                                <li>
+                                    @if($Solution->Permalink=="#")
+                                        <a style="color:#d30411" href="{{asset('')}}solutions">
+                                            @else
+                                                <a style="color:#d30411" href="{{asset('')}}solutions/{{$Solution->Permalink}}">
+                                                    @endif{{$Solution->SolutionsName}}
+                                                </a>
+                                </li>
                             @endforeach
                         </ul>
                     </div>
