@@ -3,9 +3,9 @@
 @endphp
 
 @php
-    $title = "Avtech Support In Bangladesh | Soshine Marketing Company";
-    $keywords = "avtech, support, bangladesh, avtech, distrubutor, importer";
-    $description = "Avtech Support In Bangladesh, Contact with Soshine Marketing Company";
+    $title = $HighLights->BrowserTitle;
+    $keywords = $HighLights->SeoKeyword;
+    $description = $HighLights->SeoDescription;
 @endphp
 
 @include('UI.inc.headersource')
