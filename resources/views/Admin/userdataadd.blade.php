@@ -4,7 +4,7 @@
 
     <!-- Navbar -->
 @include('Admin.inc.adminHeader')
-<!-- /.navbar -->
+    <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
 @include('Admin.inc.adminSideBar')
@@ -158,6 +158,7 @@
         </div>
     </footer>
 </div>
+
 <!-- ./wrapper -->
 <script src=" {{ mix('js/app.js') }} "></script>
 <script type="text/javascript">

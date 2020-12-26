@@ -175,7 +175,7 @@
                                             @else
                                                 <a style="color:#d30411" href="{{asset('')}}solutions/{{$Solution->Permalink}}">
                                                     @endif{{$Solution->SolutionsName}}
-                                                </a>
+                                        </a>
                                 </li>
                             @endforeach
                         </ul>

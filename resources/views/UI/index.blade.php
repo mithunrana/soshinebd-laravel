@@ -312,23 +312,35 @@ $SiteProfile = App\SiteProfile::first();
                     <div class="solution-slider products-slider-custom">
                         <!--product-item-->
                         @foreach(App\Solutions::orderBy('id','DESC')->where('ActiveStatus','1')->skip(0)->take(8)->get() as $Solution)
-                        <div class="products-item">
-                            <!--solution item-->
-                            <div class="solution-item">
-                                <div class="media">
-                                    <a href="{{asset('')}}solutions/{{$Solution->Permalink}}">
-                                    <img style="width:40px" class="mr-3 img-fluid" src="{{asset('')}}{{$Solution->featuredimage2->imageurl}}" alt="{{$Solution->ImageAltText}}">
-                                    </a>
-                                    <div class="media-body">
-                                        <h5 style="color: #505050; font-weight: 600" class="mt-0">
-                                            <a style="color:#d30411" href="{{asset('')}}solutions/{{$Solution->Permalink}}">{{$Solution->SolutionsName}}</a>
-                                        </h5>
-                                        <p style="color: #787878;font-size: 14px;text-transform: capitalize;margin-bottom: 5px">{{$Solution->SolutionsName}}</p>
-                                        <a style="color: #d71920;" href="{{asset('')}}solutions/{{$Solution->Permalink}}">More</a>
+                            <div class="products-item">
+                                <!--solution item-->
+                                <div class="solution-item">
+                                    <div class="media">
+                                        @if($Solution->Permalink=="#")
+                                            <a style="color:#d30411" href="{{asset('')}}solutions">
+                                                @else
+                                                    <a style="color:#d30411" href="{{asset('')}}solutions/{{$Solution->Permalink}}">
+                                                        @endif
+                                                        <img style="width:40px" class="mr-3 img-fluid" src="{{asset('')}}{{$Solution->featuredimage2->imageurl}}" alt="{{$Solution->ImageAltText}}">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h5 style="color: #505050; font-weight: 600" class="mt-0">
+                                                            @if($Solution->Permalink=="#")
+                                                                <a style="color:#d30411" href="{{asset('')}}solutions">
+                                                                    @else
+                                                                        <a style="color:#d30411" href="{{asset('')}}solutions/{{$Solution->Permalink}}">
+                                                                            @endif{{$Solution->SolutionsName}}</a>
+                                                        </h5>
+                                                        <p style="color: #787878;font-size: 14px;text-transform: capitalize;margin-bottom: 5px">{{$Solution->SolutionsName}}</p>
+                                                        @if($Solution->Permalink=="#")
+                                                            <a style="color:#d30411" href="{{asset('')}}solutions">
+                                                                @else
+                                                                    <a style="color:#d30411" href="{{asset('')}}solutions/{{$Solution->Permalink}}">
+                                                                        @endif More</a>
+                                                    </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         @endforeach
                     </div>
                 </div>

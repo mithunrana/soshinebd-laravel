@@ -231,6 +231,17 @@ class UserDataController extends Controller
         return view('Admin.userdataadd');
     }
 
+
+    public function exitingCheck(Request $request){
+        $Email = $request->get('Email');
+        $Check = User::where('email',$Email)->count();
+        if($Check>0){
+            echo "1";
+        }else{
+            echo "0";
+        }
+    }
+
     public function userDataStore(Request $request){
             $this->validate($request,[
                 'name' => 'required|min:3',
