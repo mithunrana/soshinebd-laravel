@@ -252,6 +252,7 @@ class UserDataController extends Controller
                 'servicetype' => 'required',
                 'country' => 'required|max:255',
                 'address' => 'required|min:10',
+                'partner' => 'required',
             ]);
 
         User::create([

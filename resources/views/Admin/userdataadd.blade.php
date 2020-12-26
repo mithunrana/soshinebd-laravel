@@ -130,6 +130,16 @@
                                         @if($errors->has('Website'))<small style="color:red;font-weight: bold;">{{$errors->first('Website')}}</small>@endif
                                         <input type="text" class="form-control" value="{{old('Website')}}" placeholder="Enter Website Name" id="Website" name="Website" >
                                     </div>
+
+                                    <div class="form-group col-6 col-lg-4">
+                                        <label for="partner" style="margin-bottom: 0px;">Partner</label>
+                                        @if($errors->has('partner'))<small style="color:red;font-weight: bold;">{{$errors->first('partner')}}</small>@endif
+                                        <select id="partner" name="partner" class="form-control">
+                                            <option selected="selected" disabled="disabled">SELECT Partner TYPE</option>/
+                                            <option value="no" selected="selected">NO</option>/
+                                            <option value="yes">YES</option>
+                                        </select>
+                                    </div>
                                 </div>
 
                                 <div class="row">
