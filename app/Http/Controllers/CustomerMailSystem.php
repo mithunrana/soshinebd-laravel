@@ -50,16 +50,26 @@ class CustomerMailSystem extends Controller
         $servicetype = request('servicetype');
         $activestatus = request('activestatus');
         $tomail = "info@soshinebd.com";
-        if ($customertype || $servicetype || $activestatus ) {
-            $emails = User::where('customertype',$customertype)
-                ->Where('servicetype', $servicetype)
-                ->Where('activestatus', $activestatus)->skip($skip)->take($take)->get()->toArray();
-        }
-        else {
-            $emails = User::get()->toArray();
-        }
-        Mail::bcc($emails)->send(new CustomerMailSend($MailDetails,$MailSubject));
-        Session::flash("success");
-        return redirect()->to('admin/customer-mail-send');
+               /*if ($customertype || $servicetype || $activestatus ) {
+           $emails = User::where('customertype',$customertype)
+               ->Where('servicetype', $servicetype)
+               ->Where('activestatus', $activestatus)->skip($skip)->take($take)->get()->toArray();
+       }*/
+	   if ($customertype || $servicetype || $activestatus ) {
+           $emails = User::where('customertype',$customertype)
+               ->Where('servicetype', $servicetype)
+               ->Where('activestatus', $activestatus)->skip($skip)->take($take)->get();
+       }
+	   /*else {
+           $emails = User::get()->toArray();
+       }*/
+       else {
+           $emails = User::get();
+            }
+	   foreach($emails as $email){
+		   Mail::to($email)->send(new CustomerMailSend($MailDetails,$MailSubject));
+	   }
+       Session::flash("success");
+       return redirect()->to('admin/customer-mail-send');
     }
 }
