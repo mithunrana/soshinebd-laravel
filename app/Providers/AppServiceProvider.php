@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use App\SiteProfile;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -23,6 +24,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        view()->composer('*', function ($view){
+            $SiteProfile = SiteProfile::first();
+            $view->with('cartSetting',$SiteProfile);
+
+        });
     }
 }

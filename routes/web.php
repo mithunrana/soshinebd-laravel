@@ -1,5 +1,13 @@
 <?php
 
+//Clear Cache
+Route::get('clear', function () {
+    $exitCode = Artisan::call('config:clear');
+    $exitCode = Artisan::call('cache:clear');
+    $exitCode = Artisan::call('config:cache');
+    $exitCode = Artisan::call('storage:link');
+    return 'Cache Cleared Successfully'; //Return anything
+});
 
 Route::get('/','HomeUIController@index');
 Route::get('/products','ProductsController@productsmain');
