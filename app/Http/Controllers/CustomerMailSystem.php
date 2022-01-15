@@ -7,9 +7,11 @@ use Illuminate\Http\Request;
 use App\SiteProfile;
 use Session;
 use Mail;
+use DB;
 use App\Mail\CustomerMailSend;
 class CustomerMailSystem extends Controller
 {
+
     public function CustomerMail(){
         return view('Admin.CustomerMailSendingSystem');
     }
@@ -29,9 +31,7 @@ class CustomerMailSystem extends Controller
             $data = count($MailList);
         }
         echo $data;
-
     }
-
 
 
     public function CustomerMailSend(Request $request){
@@ -72,4 +72,37 @@ class CustomerMailSystem extends Controller
        Session::flash("success");
        return redirect()->to('admin/customer-mail-send');
     }
+
+
+    public function conditionalUsrMailAddressUI(){
+        return view('Admin.ConditionalUserMailAddressSelect');
+    }
+
+
+    public function  conditionalUserMailAddressGet(Request $request){
+        $customertype = $request->get('customertype');
+        $servicetype = $request->get('servicetype');
+        $activestatus = $request->get('activestatus');
+        $skip = $request->get('skipvalue');
+        $take = $request->get('takevalue');
+        $delimiter = $request->get('delimiter');
+
+        if($customertype == '' || $servicetype == '' || $activestatus == ''){
+            return response()->json(['success' => "Please Fill Out The Required Fill", 'status' => '1']);
+        }else{
+            if($skip == '' || $take=='' || $delimiter==''){
+                return response()->json(['success' => "Please Fill Out The Required Fill", 'status' => '1']);
+            }else{
+                $query = 'SELECT GROUP_CONCAT(IF(users.email !="", users.email, NULL) SEPARATOR "'.$delimiter.'") as messageMail FROM users WHERE users.customertype = "'.$customertype.'" and users.servicetype = "'.$servicetype.'" and users.activestatus = "'.$activestatus.'"';
+                $data  = \DB::select($query);
+                $TotalMailAddress = '';
+                foreach($data as $singlemail){
+                $TotalMailAddress = $singlemail->messageMail;
+                }
+                return response()->json(['message' => $TotalMailAddress, 'status' => '2']);
+            }
+        }
+    }
+
+
 }

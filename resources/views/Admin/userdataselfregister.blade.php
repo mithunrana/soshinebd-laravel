@@ -20,6 +20,7 @@
                         <div class="card-header">
                             <a class="btn btn-success" href="{{url('admin/userdata-add')}}">Add New +</a>
                             <a class="btn btn-info" href="{{url('admin/userdata-manage')}}">Self Register User</a>
+                            <a class="btn btn-info" href="{{url('admin/conditional-user-mail-address')}}">Raw Mail Address</a>
                         </div>
                         <div class="card-body">
                             <table id="mytable" class="table table-striped">

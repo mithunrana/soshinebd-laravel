@@ -68,7 +68,8 @@ Route::get('admin/customer-mail-send','CustomerMailSystem@CustomerMail')->middle
 Route::post('admin/customer-mail-send','CustomerMailSystem@CustomerMailSend')->middleware('AdminUser');
 Route::get('admin/conditional-user-mail-count','CustomerMailSystem@ConditionalUserCount')->middleware('AdminUser');
 Route::get('admin/exiting-check','UserDataController@exitingCheck')->middleware('AdminUser');
-
+Route::get('admin/conditional-user-mail-address','CustomerMailSystem@conditionalUsrMailAddressUI')->middleware('AdminUser');
+Route::post('admin/conditional-user-mail-address-get','CustomerMailSystem@conditionalUserMailAddressGet')->middleware('AdminUser');
 
 
 
