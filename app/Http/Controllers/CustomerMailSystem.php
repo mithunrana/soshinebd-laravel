@@ -86,18 +86,24 @@ class CustomerMailSystem extends Controller
         $skip = $request->get('skipvalue');
         $take = $request->get('takevalue');
         $delimiter = $request->get('delimiter');
-
+        $TotalMailAddress = '';
+        $counter = 0;
         if($customertype == '' || $servicetype == '' || $activestatus == ''){
             return response()->json(['success' => "Please Fill Out The Required Fill", 'status' => '1']);
         }else{
             if($skip == '' || $take=='' || $delimiter==''){
-                return response()->json(['success' => "Please Fill Out The Required Fill", 'status' => '1']);
+                return response()->json(['success' => "Please Fill Out The Required Fill",'status' => '1']);
             }else{
-                $query = 'SELECT GROUP_CONCAT(IF(users.email !="", users.email, NULL) SEPARATOR "'.$delimiter.'") as messageMail FROM users WHERE users.customertype = "'.$customertype.'" and users.servicetype = "'.$servicetype.'" and users.activestatus = "'.$activestatus.'"';
-                $data  = \DB::select($query);
-                $TotalMailAddress = '';
+                $data = User::where('customertype',$customertype)->Where('servicetype', $servicetype)->Where('activestatus', $activestatus)->skip($skip)->take($take)->get();
+                /*$query = 'SELECT GROUP_CONCAT(IF(users.email !="", users.email, NULL) SEPARATOR "'.$delimiter.'" LIMIT '.$skip.', '.$take.') as messageMail FROM users WHERE users.customertype = "'.$customertype.'" and users.servicetype = "'.$servicetype.'" and users.activestatus = "'.$activestatus.'"';
+                $data  = \DB::select($query);*/
                 foreach($data as $singlemail){
-                $TotalMailAddress = $singlemail->messageMail;
+                    if($counter==0){
+                        $TotalMailAddress =   $TotalMailAddress.$singlemail->email;
+                        $counter = $counter + 1;
+                    }else{
+                        $TotalMailAddress =   $TotalMailAddress.$delimiter.$singlemail->email;
+                    }
                 }
                 return response()->json(['message' => $TotalMailAddress, 'status' => '2']);
             }
