@@ -5,6 +5,8 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use App\SiteProfile;
+use App\District;
+use App\HiringStatus;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -26,8 +28,11 @@ class AppServiceProvider extends ServiceProvider
     {
         view()->composer('*', function ($view){
             $SiteProfile = SiteProfile::first();
-            $view->with('cartSetting',$SiteProfile);
-
+            $DistrictList = District::get();
+            $AllHiringStatus = HiringStatus::get();
+            $view->with('SiteProfile',$SiteProfile);
+            $view->with('DistrictList',$DistrictList);
+            $view->with('ApplicationHiringStatus',$AllHiringStatus);
         });
     }
 }

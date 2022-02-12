@@ -32,6 +32,11 @@ Route::get('/contact','ContactController@index');
 Route::post('/contact','ContactController@sendMail');
 Route::get('/news','NewsController@index');
 Route::get('/news/{url}','NewsController@NewsView');
+
+Route::get('/job','JobController@test');
+Route::get('/job-success','JobController@success');
+Route::post('/jobsalesexecutive','JobController@salesExecutivePost');
+
 Route::post('/search','ProductsController@bySearch');
 
 
@@ -62,6 +67,11 @@ Route::get('/user-panel-info-edit','UserDataController@userPanelInfoEdit')->midd
 Route::post('/user-panel-info-update','UserDataController@userInfoUpdate')->middleware('auth');
 Route::post('/user-panel-image-update','UserDataController@userImageUpload')->middleware('auth');
 
+
+Route::get('admin/job-application','JobController@applicationManage')->middleware('AdminUser');
+Route::get('admin/application-edit/{id}','JobController@applicationEdit')->middleware('AdminUser');
+Route::post('admin/application-edit/{id}','JobController@applicationEditStore')->middleware('AdminUser');
+Route::get('admin/application-delete/{id}','JobController@applicationDelete')->middleware('AdminUser');
 
 
 Route::get('admin/customer-mail-send','CustomerMailSystem@CustomerMail')->middleware('AdminUser');

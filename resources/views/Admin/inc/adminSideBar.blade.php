@@ -73,6 +73,19 @@
                 </li>
 
                 <li class="nav-item">
+                    <a href="{{url('admin/job-application')}}" class="nav-link">
+                        <i class="fa fa-graduation-cap"></i>
+                        <p>Job Application
+                            <span class="right badge badge-success">
+                               @php
+                                   echo count(App\Hiring::all());
+                               @endphp
+                            </span>
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
                     <a href="{{url('admin/solutions-manage')}}" class="nav-link">
                         <i class="fa fa-graduation-cap"></i>
                         <p>Solutions
