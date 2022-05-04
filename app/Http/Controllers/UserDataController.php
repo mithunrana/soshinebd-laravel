@@ -9,7 +9,9 @@ use App\Software;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\DB;
 use Mail;
+use App\ElectroPronoSlider;
 use App\Mail\RegisterSendMail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -332,6 +334,79 @@ class UserDataController extends Controller
     }
 
    /*============USER DATA MANAGEMENT SECTION==========*/
+
+
+
+
+
+    #*===================API METHOD LIST=============================*
+
+    public function register(Request $req)
+    {
+        //valdiate
+        $validator = Validator::make($req->all(),[
+            'name' => 'required|string',
+            //'username' => 'required|string|unique:users',
+            'email' => 'required|string|unique:users',
+            'password' => 'required|string|min:6',
+        ]);
+
+        if($validator->fails()){
+            return response(['message' => $validator->errors()->all()],400);
+        }
+
+        //create new user in users table
+        $user = User::create([
+            'name' => $req->name,
+            'email' => $req->email,
+            'password' => Hash::make($req->password)
+        ]);
+
+        $token = $user->createToken('User')-> accessToken;
+        $response = ['user' => $user, 'token' => $token];
+        return response()->json($response, 200);
+    }
+
+
+   public function login(Request $req)
+   {
+
+        $validator = Validator::make($req->all(),[
+            'email' => 'required|email',
+            'password'=> 'required',
+        ]);
+
+        if($validator->fails()){
+            return response([
+                'message' => $validator->errors()->all()
+            ]);
+        }
+
+        // find user email in users table
+        $user = User::where('email', $req->email)->first();
+        // if user email found and password is correct
+        if ($user && Hash::check($req->password, $user->password)) {
+            $token = $user->createToken('User')-> accessToken;
+            $response = ['user' => $user, 'token' => $token];
+            return response()->json($response, 200);
+        }
+        $response = ['message' => 'Incorrect email or password'];
+        return response()->json($response, 400);
+    }
+
+
+    public function sliderList(){
+        //return response(['sliderdata' => ElectroPronoSlider::where('ActiveStatus',1)->get()],200);
+        return response(['sliderdata' => DB::table('electro_prono_sliders')->selectRaw('electro_prono_sliders.sliderTopic,electro_prono_sliders.sliderimage,images.imageurl')->join('images', 'electro_prono_sliders.sliderimage', '=', 'images.id')->get()],200);
+    }
+
+
+
+    public function recentProducts(){
+        return DB::table('products')->join('products_images', 'products.FeaturedImage', '=', 'products_images.id')->select('products.Model','products.Name','products.Datasheet','products.ProductShortDescription','products.FeaturedImage','products.CurrentPrice','products.PartnerPrice','products.PriceStatus','products_images.imageurl')->where('products.ActiveStatus', '<>', 1)->limit(10)->get();
+    }
+
+
 
 
 }
