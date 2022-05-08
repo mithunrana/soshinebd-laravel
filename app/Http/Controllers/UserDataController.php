@@ -402,11 +402,38 @@ class UserDataController extends Controller
 
 
 
-    public function recentProducts(){
-        return DB::table('products')->join('products_images', 'products.FeaturedImage', '=', 'products_images.id')->select('products.Model','products.Name','products.Datasheet','products.ProductShortDescription','products.FeaturedImage','products.CurrentPrice','products.PartnerPrice','products.PriceStatus','products_images.imageurl')->where('products.ActiveStatus', '<>', 1)->limit(10)->get();
-    }
+public function discoverProducts(){
+    return DB::table('discover_products')->join('products_images', 'discover_products.FeaturedImage', '=', 'products_images.id')->select('discover_products.*','products_images.imageurl')->get();
+}
 
 
+public function discoverProductsList($id){
+    return DB::table('products')->join('products_images', 'products.FeaturedImage', '=', 'products_images.id')->join('products_secondary_categories','products_secondary_categories.id','=','products.Category')->join('products_primary_categories','products_primary_categories.id','=','products_secondary_categories.PrimaryCategoryId')->select('products.Model','products.Name','products.Datasheet','products.ProductShortDescription','products.FeaturedImage','products.CurrentPrice','products.PartnerPrice','products.PriceStatus','products_images.imageurl')->where('products.ActiveStatus', '=', 1)->where('products_primary_categories.id', '=', 10)->get();
+}
+
+
+public function recentProducts(){
+    return DB::table('products')->join('products_images', 'products.FeaturedImage', '=', 'products_images.id')->select('products.Model','products.Name','products.Datasheet','products.ProductShortDescription','products.FeaturedImage','products.CurrentPrice','products.PartnerPrice','products.PriceStatus','products_images.imageurl')->where('products.ActiveStatus', '=', 1)->limit(10)->get();
+}
+
+public function fewHDCamera(){
+    return DB::table('products')->join('products_images', 'products.FeaturedImage', '=', 'products_images.id')->join('products_secondary_categories','products_secondary_categories.id','=','products.Category')->join('products_primary_categories','products_primary_categories.id','=','products_secondary_categories.PrimaryCategoryId')->select('products.Model','products.Name','products.Datasheet','products.ProductShortDescription','products.FeaturedImage','products.CurrentPrice','products.PartnerPrice','products.PriceStatus','products_images.imageurl')->where('products.ActiveStatus', '=', 1)->where('products_primary_categories.CategoryName', '=', 'HD Camera')->limit(10)->get();
+}
+
+
+public function fewIPCamera(){
+    return DB::table('products')->join('products_images', 'products.FeaturedImage', '=', 'products_images.id')->join('products_secondary_categories','products_secondary_categories.id','=','products.Category')->join('products_primary_categories','products_primary_categories.id','=','products_secondary_categories.PrimaryCategoryId')->select('products.Model','products.Name','products.Datasheet','products.ProductShortDescription','products.FeaturedImage','products.CurrentPrice','products.PartnerPrice','products.PriceStatus','products_images.imageurl')->where('products.ActiveStatus', '=', 1)->where('products_primary_categories.CategoryName', '=', 'IP Camera')->limit(10)->get();
+}
+
+
+public function fewDVR(){
+    return DB::table('products')->join('products_images', 'products.FeaturedImage', '=', 'products_images.id')->join('products_secondary_categories','products_secondary_categories.id','=','products.Category')->join('products_primary_categories','products_primary_categories.id','=','products_secondary_categories.PrimaryCategoryId')->select('products.Model','products.Name','products.Datasheet','products.ProductShortDescription','products.FeaturedImage','products.CurrentPrice','products.PartnerPrice','products.PriceStatus','products_images.imageurl')->where('products.ActiveStatus', '=', 1)->where('products_primary_categories.CategoryName', '=', 'Digital Video Recorder(DVR)')->limit(10)->get();
+}
+
+
+public function fewNVR(){
+    return DB::table('products')->join('products_images', 'products.FeaturedImage', '=', 'products_images.id')->join('products_secondary_categories','products_secondary_categories.id','=','products.Category')->join('products_primary_categories','products_primary_categories.id','=','products_secondary_categories.PrimaryCategoryId')->select('products.Model','products.Name','products.Datasheet','products.ProductShortDescription','products.FeaturedImage','products.CurrentPrice','products.PartnerPrice','products.PriceStatus','products_images.imageurl')->where('products.ActiveStatus', '=', 1)->where('products_primary_categories.CategoryName', '=', 'Network Video Recorder (NVR)')->limit(10)->get();
+}
 
 
 }
